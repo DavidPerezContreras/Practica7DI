@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+    margin:0;
+}
+
+#tituloPractica{
+    text-align: center;
+}
+
+#navegacion{
+    text-align: center;
+}
+
+#contenido{
+    display: flex;
+    box-sizing: border-box;
+    width:100vw;
+    height:80vh;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7</title>
+
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+
+
+
+
+    
+    <h1 id="tituloPractica">Práctica 7</h1>
+    <div id="navegacion">
+        <button class="botonNavegacion" id="botonBordes">Bordes</button>
+        <button class="botonNavegacion" id="botonFondos">Fondos</button>
+        <button class="botonNavegacion">Efectos<br>Texto</button>
+        <button class="botonNavegacion">Fuentes</button>
+        <button class="botonNavegacion">Transform.</button>
+        <button class="botonNavegacion">Transiciones</button>
+        <button class="botonNavegacion">Animaciones</button>
+        <button class="botonNavegacion">Col<br>Múltiples</button>
+        <button class="botonNavegacion">Color</button>
+        <button class="botonNavegacion">Degradados</button>
+    </div>
+
+
+<!--CONTENIDO-->
+    <iframe id="contenido"></iframe>
+<!--fin contenido-->
+
+    <script>
+        function mostrarBordesHtml(){
+            document.getElementById("contenido").src="bordes.html";
+        }
+
+        function mostrarFondosHtml(){
+            document.getElementById("contenido").src="fondos.html";
+        }
+
+        document.getElementById("botonBordes").onclick=mostrarBordesHtml;
+        document.getElementById("botonFondos").onclick=mostrarFondosHtml;
+
+    </script>
+</body>
+</html>
