@@ -19,14 +19,17 @@
     <div id="navegacion">
         <button class="botonNavegacion" id="botonBordes">Bordes</button>
         <button class="botonNavegacion" id="botonFondos">Fondos</button>
-        <button class="botonNavegacion">Efectos<br>Texto</button>
-        <button class="botonNavegacion">Fuentes</button>
-        <button class="botonNavegacion">Transform.</button>
-        <button class="botonNavegacion">Transiciones</button>
-        <button class="botonNavegacion">Animaciones</button>
-        <button class="botonNavegacion">Col<br>Múltiples</button>
-        <button class="botonNavegacion">Color</button>
-        <button class="botonNavegacion">Degradados</button>
+        <button class="botonNavegacion" id="botonEfectosTexto">Efectos<br>Texto</button>
+        <button class="botonNavegacion" id="botonFuentes">Fuentes</button>
+        <button class="botonNavegacion" id="botonTransform">Transform.</button>
+        <button class="botonNavegacion" id="botonTransiciones">Transiciones</button>
+        <button class="botonNavegacion" id="botonAnimaciones">Animaciones</button>
+        <button class="botonNavegacion" id="botonColMultiples">Col<br>Múltiples</button>
+        <button class="botonNavegacion" id="botonColor">Color</button>
+        <button class="botonNavegacion" id="botonDegradados">Degradados</button>
+        <button class="botonNavegacion" id="botonFlexBox1">FlexBox 1</button>
+        <button class="botonNavegacion" id="botonFlexBox2">FlexBox 2</button>
+        <button class="botonNavegacion" id="botonPlantilla">Plantilla</button>
     </div>
 
 
@@ -39,13 +42,62 @@
             document.getElementById("contenido").src="bordes.html";
         }
 
+
         function mostrarFondosHtml(){
-            document.getElementById("contenido").src="fondos.html";
+            document.getElementById("contenido").src="plantilla.html";
+        }
+
+        function mostrarEfectosTexto(){
+            document.getElementById("contenido").src="efectostexto.html";
+        }
+
+        function mostrarFuentesHtml(){
+            document.getElementById("contenido").src="fuentes.html";
+        }
+
+        function mostrarTransformHtml(){
+            document.getElementById("contenido").src="transform.html";
+        }
+
+        function mostrarTransicionesHtml(){
+            document.getElementById("contenido").src="transiciones.html";
+        }
+
+        function mostrarAnimacionesHtml(){
+            document.getElementById("contenido").src="animaciones.html";
+        }
+
+        function mostrarColMultiplesHtml(){
+            document.getElementById("contenido").src="colmultiples.html";
+        }
+
+        function mostrarColorHtml(){
+            document.getElementById("contenido").src="color.html";
+        }
+
+        function mostrarDegradadosHtml(){
+            document.getElementById("contenido").src="degradados.html";
+        }
+
+        function mostrarFlexBox1Html(){
+            document.getElementById("contenido").src="flexbox1.html";
+        }
+
+        function mostrarFlexBox2Html(){
+            document.getElementById("contenido").src="flexbox2.html";
+        }
+
+        function mostrarPlantilla(){
+            document.getElementById("contenido").src="plantilla.html";
         }
 
         document.getElementById("botonBordes").onclick=mostrarBordesHtml;
         document.getElementById("botonFondos").onclick=mostrarFondosHtml;
+        document.getElementById("botonEfectosTexto").onclick=mostrarEfectosTexto;
 
+
+
+        document.getElementById("botonPlantilla").onclick=mostrarPlantilla;
     </script>
 </body>
 </html>
