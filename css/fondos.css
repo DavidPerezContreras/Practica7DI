@@ -1,0 +1,88 @@
+
+        /*Código CSS propio*/
+        .imagenessuperpuestas{
+            width: 350px;                                                 
+            height: 250px;                                                 
+                                                       
+            background: url('https://media.tenor.com/TlmJDLq1pmEAAAAj/frog-cute.gif') -40px 0px,       
+            url("https://media.tenor.com/6A7C97sOXs0AAAAi/microsoft.gif") 50px -10px,                
+            url("https://1.bp.blogspot.com/-JREhSKN8sMM/VmH2B-jmFXI/AAAAAAAAIzg/ScNtA185M88/s400/02273%2Bpaisajes01.jpg") ;                              
+            background-size: 200px 50px, 100px 170px, 200x 150px;
+            background-repeat:no-repeat}
+    
+            .determinadaposicion{
+            background-color: grey;
+            background-image:  url("https://img.freepik.com/vector-gratis/banner-sobre-tema-campeonato-mundial-qatar-2022_91128-1612.jpg?w=740&t=st=1668467795~exp=1668468395~hmac=33fbcf48f8fcd00bce0ddae7deeb2ad6a671de21a8f2ad01e610fff2a45bacd1"); 
+            height: 350px ; 
+            width: 450px;
+            background-origin: border-box; 
+            background-size: 40% 70%; 
+            background-position: 110px 75px;
+            background-repeat:no-repeat
+            }
+    
+            .repfondox{
+            background-image:  url("https://cdn.pixabay.com/photo/2019/04/04/15/17/smartphone-4103051_960_720.jpg") ; 
+            height: 350px; 
+            width: 450px; 
+            background-origin: border-box; 
+            background-size: 20% 20%; 
+            background-repeat: repeat-x;
+            }
+    
+            .repfondoy{
+            background-image: url("https://cdn.pixabay.com/photo/2019/04/04/15/17/smartphone-4103051_960_720.jpg"); 
+            height: 350px; 
+            width: 450px;
+            background-origin: border-box; 
+            background-size: 20% 20%; 
+            background-repeat: repeat-y; 
+            }
+    
+            .fondoizquierda{
+            height: 350px; 
+            width: 450px;
+            background-image: url("https://m.media-amazon.com/images/I/715vwvP5ZEL.png"); 
+            background-attachment: fixed; 
+            overflow: scroll;
+            background-repeat:no-repeat;
+            background-position: 550px;
+            }
+    
+            .fondoderecha{
+            height: 350px; 
+            width: 450px;
+            background-image: url("https://m.media-amazon.com/images/I/715vwvP5ZEL.png"); 
+            background-attachment: scroll; 
+            overflow: scroll; 
+            background-repeat:no-repeat
+            }
+    
+            .clipcontenido{
+            padding: 35px; 
+            height: 150px; 
+            width: 450px;
+            background-color: grey; 
+            background-origin: border-box; 
+            background-clip: content-box; 
+            }
+    
+            .clipborde{
+            padding: 35px; 
+            height: 150px; 
+            width: 450px;
+            background-color: grey; 
+            background-origin: border-box; 
+            background-clip: border-box; 
+            }
+    
+            .clippadding{
+            padding: 35px; 
+            height: 150px; 
+            width: 450px;
+            background-color: grey; 
+            background-origin: border-box; 
+            background-clip: padding-box; 
+            }
+
+            
