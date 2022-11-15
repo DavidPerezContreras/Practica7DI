@@ -17,3 +17,80 @@ body{
     width:100vw;
     height:80vh;
 }
+
+
+
+
+
+
+
+
+
+
+.rrc-marco-indice {
+    display: flex;
+    justify-content: center;
+
+}
+
+.rrc-indice {
+    display: block;
+    list-style: none;
+    align-items: flex-end;
+    text-align: center;
+
+}
+
+.rrc-indice>li>a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.rrc-explicacion {
+    /*Recuador gris explicativo*/
+    border: 1px solid black;
+    padding: 30px;
+    background-color: #E7E9EB;
+    /*cambio color del recuadro gris*/
+    max-width: 700px;
+    /*cambio tamaño del recuadro gris*/
+    margin: 0 auto;
+}
+
+.rrc-explicacion>.rrc-codigo {
+    /*estilos para el codigo*/
+    background-color: white;
+    padding: 10px;
+
+}
+
+.rrc-enseño>div {
+    /*divs de muestreo (1-2-3)*/
+    background-color: #f1f1f1;
+    width: 100px;
+    /*tamaño de la caja*/
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    /*tamaño de los contenedores hijos*/
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+
+    /*cambio de tamaño de las muestras par dispositivos moviles*/
+    .rrc-enseño>div {
+        width: 50px;
+    }
+}
+
+.rrc-enseño {
+    /*atributos generales contenedores padres de muestra*/
+    margin: 0 auto;
+    border: 2px solid black;
+    max-width: 600px;
+    /*tamaño (ancho) maximos de los contenedores padre*/
+    /*max-height: 600px;*/
+    background-color: DodgerBlue;
+}
