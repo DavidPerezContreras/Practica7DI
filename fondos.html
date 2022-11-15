@@ -4,10 +4,409 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borde</title>
+    <title>ProyectoCSS</title>
+    <style type="text/css">  
+       body{
+    background-color: #99CCFF;
+    margin:0;
+}
+
+#tituloPractica{
+    text-align: center;
+}
+
+#navegacion{
+    text-align: center;
+}
+
+#contenido{
+    display: flex;
+    box-sizing: border-box;
+    width:100vw;
+    height:80vh;
+}
+
+
+
+.rrc-marco-indice {
+    display: flex;
+    justify-content: center;
+
+}
+
+.rrc-indice {
+    display: block;
+    list-style: none;
+    align-items: flex-end;
+    text-align: center;
+
+}
+
+.rrc-indice>li>a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.rrc-explicacion {
+    /*Recuador gris explicativo*/
+    border: 1px solid black;
+    padding: 30px;
+    background-color: #E7E9EB;
+    /*cambio color del recuadro gris*/
+    max-width: 700px;
+    /*cambio tamaño del recuadro gris*/
+    margin: 0 auto;
+}
+
+.rrc-explicacion>.rrc-codigo {
+    /*estilos para el codigo*/
+    background-color: white;
+    padding: 10px;
+
+}
+
+.rrc-enseño>div {
+    /*divs de muestreo (1-2-3)*/
+    background-color: #f1f1f1;
+    width: 100px;
+    /*tamaño de la caja*/
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    /*tamaño de los contenedores hijos*/
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+
+    /*cambio de tamaño de las muestras par dispositivos moviles*/
+    .rrc-enseño>div {
+        width: 50px;
+    }
+}
+
+.rrc-enseño {
+    /*atributos generales contenedores padres de muestra*/
+    margin: 0 auto;
+    border: 2px solid black;
+    max-width: 600px;
+    /*tamaño (ancho) maximos de los contenedores padre*/
+    /*max-height: 600px;*/
+    background-color: DodgerBlue;
+}
+
+.rrc-enseño{ /*atributos generales contenedores padres de muestra*/
+    margin: 0 auto;
+    border: 2px solid black;
+    max-width: 600px;/*tamaño (ancho) maximos de los contenedores padre*/
+    /*max-height: 600px;*/
+    background-color: DodgerBlue;
+}
+
+
+
+        /*Código CSS propio*/
+        .imagenessuperpuestas{
+        width: 350px;                                                 
+        height: 250px;                                                 
+                                                   
+        background: url('https://media.tenor.com/TlmJDLq1pmEAAAAj/frog-cute.gif') -40px 0px,       
+        url("https://media.tenor.com/6A7C97sOXs0AAAAi/microsoft.gif") 50px -10px,                
+        url("https://1.bp.blogspot.com/-JREhSKN8sMM/VmH2B-jmFXI/AAAAAAAAIzg/ScNtA185M88/s400/02273%2Bpaisajes01.jpg") ;                              
+        background-size: 200px 50px, 100px 170px, 200x 150px;
+        background-repeat:no-repeat}
+
+        .determinadaposicion{
+        background-color: grey;
+        background-image:  url("https://img.freepik.com/vector-gratis/banner-sobre-tema-campeonato-mundial-qatar-2022_91128-1612.jpg?w=740&t=st=1668467795~exp=1668468395~hmac=33fbcf48f8fcd00bce0ddae7deeb2ad6a671de21a8f2ad01e610fff2a45bacd1"); 
+        height: 350px ; 
+        width: 450px;
+        background-origin: border-box; 
+        background-size: 40% 70%; 
+        background-position: 110px 75px;
+        background-repeat:no-repeat
+        }
+
+        .repfondox{
+        background-image:  url("https://cdn.pixabay.com/photo/2019/04/04/15/17/smartphone-4103051_960_720.jpg") ; 
+        height: 350px; 
+        width: 450px; 
+        background-origin: border-box; 
+        background-size: 20% 20%; 
+        background-repeat: repeat-x;
+        }
+
+        .repfondoy{
+        background-image: url("https://cdn.pixabay.com/photo/2019/04/04/15/17/smartphone-4103051_960_720.jpg"); 
+        height: 350px; 
+        width: 450px;
+        background-origin: border-box; 
+        background-size: 20% 20%; 
+        background-repeat: repeat-y; 
+        }
+
+        .fondoizquierda{
+        height: 350px; 
+        width: 450px;
+        background-image: url("https://m.media-amazon.com/images/I/715vwvP5ZEL.png"); 
+        background-attachment: fixed; 
+        overflow: scroll;
+        background-repeat:no-repeat;
+        background-position: 550px;
+        }
+
+        .fondoderecha{
+        height: 350px; 
+        width: 450px;
+        background-image: url("https://m.media-amazon.com/images/I/715vwvP5ZEL.png"); 
+        background-attachment: scroll; 
+        overflow: scroll; 
+        background-repeat:no-repeat
+        }
+
+        .clipcontenido{
+        padding: 35px; 
+        height: 150px; 
+        width: 450px;
+        background-color: grey; 
+        background-origin: border-box; 
+        background-clip: content-box; 
+        }
+
+        .clipborde{
+        padding: 35px; 
+        height: 150px; 
+        width: 450px;
+        background-color: grey; 
+        background-origin: border-box; 
+        background-clip: border-box; 
+        }
+
+        .clippadding{
+        padding: 35px; 
+        height: 150px; 
+        width: 450px;
+        background-color: grey; 
+        background-origin: border-box; 
+        background-clip: padding-box; 
+        }
+    </style>
 </head>
-<body><p>Contenido de fondos.html</p>
+<body>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Fondos</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#Propiedades">Propiedades</a></li>
+                    <li><a href="#f2">Imágenes superpuestas</a></li>
+                    <li><a href="#f3">Fondos en una determinada posición</a></li>
+                    <li><a href="#f4">Repetición de fondos</a></li>
+                    <li><a href="#f5">Imagen de fondo</a></li>
+                    <li><a href="#f6">Background-clip</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    <div class="seccion">
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3 id="#Propiedades">Propiedades para fondos</h3><!--Explicacion-->
+                <p class="rrc-texto"><p><b>1- background-color:</b> color que queremos poner; Ejemplo: background-color: red;</p>
+                <p><b>2- background-image:</b> url("ruta de imagen"); Ejemplo: background-image: url("imagen.jpg");</p>
+                <p><b>3- background-repeat:</b> propiedad; lo vamos a usar para la repetición de imágenes. Pueden ser 3 propiedades:
+                    <br>&nbsp;&nbsp;&nbsp; repeat-x: el fondo se repite en horizontal
+                    <br>&nbsp;&nbsp;&nbsp; repeat-y: el fondo se repite en vertical
+                    <br>&nbsp;&nbsp;&nbsp; mo-repeat: el fondo no se repite 
+                </p>
+                <p><b>4- background-position:</b> Coordenadas donde colocaremos el fondo, solo lo coloca no lo pinta; Ejemplo: background-position: 60px 100px;</p>
+                <p><b>5- background-size:</b> Tamaño del fondo, ancho y largo. Ejemplo: background-size: 30px 30px;</p>
+                <p><b>6- background-origin: </b>Actua igual que background-position, podemos pasarle los siguientes parametros:
+                    <br>&nbsp;&nbsp;&nbsp; padding-box:(El fondo empieza desde el padding del elemento)
+                    <br>&nbsp;&nbsp;&nbsp; border-box:(Empieza desde el borde del elemento)
+                    <br>&nbsp;&nbsp;&nbsp; content-box:(El fondo empieza desde el contenido del elemento, sin tener en cuenta sus bordes o padding)</p>
+                <p><b>7- background-attachment: </b>Comprueba si la imagen de fondo establecida en un elemento se mueve o permanece fija cuando se hace scroll en la centana del navegador:
+                    <br>&nbsp;&nbsp;&nbsp; fixed; (El fondo se fija en lo que respecta a la vista)
+                    <br>&nbsp;&nbsp;&nbsp; inherit; (Se utiliza para forzar a que se produzca la herencia automática)
+                    <br>&nbsp;&nbsp;&nbsp; scroll; (El fondo se desplaza junto con el elemento)
+                </p>
+                <p><b>8- background-clip:</b> Es el área que va a pintar el fondo. Puede tener 3 valores:
+                    <br>&nbsp;&nbsp;&nbsp; padding-box:(El fondo empieza desde el padding del elemento)
+                    <br>&nbsp;&nbsp;&nbsp; border-box:(Empieza desde el borde del elemento)
+                    <br>&nbsp;&nbsp;&nbsp; content-box:(El fondo empieza desde el contenido del elemento, sin tener en cuenta sus bordes o padding)
+                </p></p>
+            
+            </nav>
+            <br>
+
+    </div>
     
+    <div class="seccion">
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3 id="f2">Imágenes superpuestas de fondo(background-image)</h3><!--Explicacion-->
+                <p class="rrc-texto">Como vemos hemos puesto el paisaje de fondo, insertando una rana y un mono, 3 imágenes en total.
+                    En este ejemplo, usamos background, en vez de background-image, porque en la misma etiqueta podemos añadir varias propiedades.</p>
+                <p class="rrc-codigo"><!--codigo-->
+                            width: 350px;                                                   //ancho de la etiqueta div
+                            <br>height: 250px;                                                  //alto de la etiqueta div
+                            <br>margin-left: 400px;                                             //Poner un margen izquierdopara centrar la imagen
+                            <br>background: url(Imagenes/rana.gif) -40px 0px,         //Poner la imagen de la rana en las coordenadas indicadas x e y
+                            <br>url(Imagenes/mono.gif)130px -10px,                   //Poner la imagen del mono en las coordenadas indicadas x e y
+                            <br>url(Imagenes/fondo.jpg) ;                              //Poner la imagen de fondo
+                            <br>background-size: 200px 50px, 100px 170px, 200x 150px;           //Poner las coordenadas x e y por cada imagen en su orden
+                            <br>background-repeat:no-repeat                          //Para que no se repitan las imágenes
+                </p>
+                <div class="center-contenedor imagenessuperpuestas">
+                </div>
+            </nav>
+            <br>
+    </div>
+
+    <div class="seccion">
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3 id="f3">Fondos en una determinada posición</h3><!--Explicacion-->
+                <p class="rrc-texto">Colocamos un fondo en la posición que queramos:</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    background-image:  url(Imagenes/Qatar.png); //Imagen 
+                    <br>height: 150px; //alto de la etiqueta div
+                    <br>width: 450px;  //ancho de la etiqueta div
+                    <br>margin-left: 400px; //Poner un margen izquierdo para centrar la imagen
+                    <br>background-origin: border-box; //El fondo empieza desde el borde del elemento
+                    <br>background-size: 40% 70%; //Tamaño de la imagen
+                    <br>background-position: 110px 75px; //Posicion de la imagen
+                    <br>background-repeat:no-repeat                          //Para que no se repita la imagen
+                </p>
+                <div class="center-contenedor determinadaposicion">
+        
+                </div>
+            </nav>
+            <br>
+    </div>
     
+    <div class="seccion">
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3 id="f4">Repetición de fondos</h3><!--Explicacion-->
+                <p class="rrc-texto">Repetición en coordenada X:</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    background-image:  url(Imagen.jpg); //Imagen 
+                    <br>height: 150px; //alto de la etiqueta div
+                    <br>width: 450px;  //ancho de la etiqueta div
+                    <br>margin-left: 400px; //Poner un margen izquierdo para centrar la imagen
+                    <br>background-origin: border-box; //El fondo empieza desde el borde del elemento
+                    <br>background-size: 20% 20%; //Tamaño de la imagen
+                    <br>background-repeat: repeat-x; //El fondo se repite en el eje X
+                </p>
+                <div class="center-contenedor repfondox">
+                </div>
+                <p class="rrc-texto">Repetición en coordenada Y:</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    background-image:  url(Imagen.jpg); //Imagen 
+                    <br>height: 150px; //alto de la etiqueta div
+                    <br>width: 450px;  //ancho de la etiqueta div
+                    <br>margin-left: 400px; //Poner un margen izquierdo para centrar la imagen
+                    <br>background-origin: border-box; //El fondo empieza desde el borde del elemento
+                    <br>background-size: 20% 20%; //Tamaño de la imagen
+                    <br>background-repeat: repeat-y; //El fondo se repite en el eje X
+                </p>
+                <div class="center-contenedor repfondoy">
+                </div>
+            </nav>
+            <br>
+    </div>
+
+
+    <div class="seccion">
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3 id="f5">Imagen de fondo(background-attachment)</h3><!--Explicacion-->
+                <p class="rrc-texto">Como vemos tenemos dos imágenes que se pueden mover con el scroll y se mantienen fijas</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    Código de imagen de la izquierda:
+                        <br>background-image: url("Imagen.jpg"); //Ponemos la imagen de fondo
+                        <br>background-attachment: fixed; //Nos permite que la imagen se mueva con el scroll
+                        <br>overflow: scroll; //Nos aparece el scroll
+                    
+                    <br><br>Código de imagen de la derecha:
+                        <br>background-image: url("Imagen.jpg"); //Ponemos la imagen de fondo
+                        <br>background-attachment: scroll; //Nos permite que la imagen se mueva con el scroll
+                        <br>overflow: scroll; //Nos aparece el scroll
+                    
+                </p>
+                <div class="center-contenedor fondoizquierda"><br>Comprobamos<br><br>que<br><br>funciona<br><br>el<br><br>scroll<br><br>y<br><br>el<br><br>background-attachment<br><br>esta<br><br>en<br><br>fixed</div>
+                <div class="center-contenedor fondoderecha"><br>Comprobamos<br><br>que<br><br>funciona<br><br>el<br><br>scroll<br><br>y<br><br>el<br><br>background-attachment<br><br>esta<br><br>en<br><br>scroll</div>
+                </div>
+            </nav>
+            <br>
+    </div>
+  
+    <div class="seccion">
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3 id="f6">Background-clip</h3><!--Explicacion-->
+                <p class="rrc-texto">Clip desde el contenido del elemento:</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    padding: 35px; //Espacio entre el div y el contenido
+                    <br>height: 150px; //alto de la etiqueta div
+                    <br>margin-left: 400px; //Poner un margen izquierdo para centrar la Imagen
+                    <br>background-color: yellow; //Color de fondo
+                    <br>background-origin: border-box; //El fondo empieza desde el borde del elemento pero aun no se rellena
+                    <br>background-clip: content-box; //El fondo se rellena desde el contenido del elemento
+                </p>
+                <div class="center-contenedor clipcontenido">
+                    <p>background-clip: Determina el area que ocupara el fondo. Le podemos añadir 3 valores:
+                        border-box: Ajusta el fondo según el borde de la caja del elemento
+                        padding-box: Ajusta el fondo según el padding del elemento
+                        content-box: Ajusta el fondo según el contenido de elemento</p>
+                </div>
+
+
+                <p class="rrc-texto">Clip desde el borde del elemento:</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    padding: 35px; //Espacio entre el div y el contenido
+                    <br>height: 150px; //alto de la etiqueta div
+                    <br>margin-left: 400px; //Poner un margen izquierdo para centrar la Imagen
+                    <br>background-color: yellow; //Color de fondo
+                    <br>background-origin: border-box; //El fondo empieza desde el borde del elemento pero aun no se rellena
+                    <br>background-clip: border-box; //El fondo se rellena desde el borde del elemento
+                </p>
+                <div class="center-contenedor clipborde">
+                    <p>background-clip: Determina el area que ocupara el fondo. Le podemos añadir 3 valores:
+                        border-box: Ajusta el fondo según el borde de la caja del elemento
+                        padding-box: Ajusta el fondo según el padding del elemento
+                        content-box: Ajusta el fondo según el contenido de elemento</p>
+                </div>
+
+
+                <p class="rrc-texto">Clip desde el padding del elemento:</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    padding: 35px; //Espacio entre el div y el contenido
+                    <br>height: 150px; //alto de la etiqueta div
+                    <br>margin-left: 400px; //Poner un margen izquierdo para centrar la Imagen
+                    <br>background-color: yellow; //Color de fondo
+                    <br>background-origin: border-box; //El fondo empieza desde el borde del elemento pero aun no se rellena
+                    <br>background-clip: padding-box; //El fondo se rellena desde el borde del elemento
+                </p>
+                <div class="center-contenedor clippadding">
+                    <p>background-clip: Determina el area que ocupara el fondo. Le podemos añadir 3 valores:
+                        border-box: Ajusta el fondo según el borde de la caja del elemento
+                        padding-box: Ajusta el fondo según el padding del elemento
+                        content-box: Ajusta el fondo según el contenido de elemento</p>
+                </div>
+            </nav>
+            <br>
+    </div>
+  
 </body>
 </html>
