@@ -1,0 +1,73 @@
+.ace-borderdotted{
+    border-style: dotted;
+}
+.ace-borderdashed{
+    border-style: dashed;
+}
+.ace-bordersolid{
+    border-style: solid;
+}
+.ace-borderdouble{
+    border-style: double;
+}
+.ace-bordergroove{
+    border-style: groove;
+}
+.ace-borderridge{
+    border-style: ridge;
+}
+.ace-borderinset{
+    border-style: inset;
+}
+.ace-borderoutset{
+    border-style: outset;
+}
+.ace-bordernone{
+    border-style: none;
+}
+.ace-borderhidden{
+    border-style: hidden;
+}
+.ace-bordermix{
+    border-style: ridge dotted double dashed;
+}
+.ace-bordercolorred{
+    border-style: solid;
+    border-color: red;
+}
+.ace-bordercolorblue{
+    border-style: solid;
+    border-color: blue;
+}
+.ace-borderwidth5px{
+    border-style: solid;
+    border-width: 5px;
+}
+.ace-borderwidthmedium{
+    border-style: solid;
+    border-width: medium;
+}
+.ace-borderwidththick{
+    border-style: solid;
+    border-width: thick;
+}
+.ace-borderradius25px{
+    border-style: solid;
+    border-radius: 25px;
+}
+.ace-borderradius25px10px{
+    border-style: solid;
+    border-radius: 25px 10px;
+}
+.ace-borderspacing20px{
+    border-style: solid;
+    border-spacing: 20px;
+}
+.ace-borderspacing40px{
+    border-style: solid;
+    border-spacing: 40px;
+}
+.ace-boxshadow{
+    border-style: solid;
+    box-shadow: 10px 5px 5px black;
+}
