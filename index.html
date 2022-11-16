@@ -24,7 +24,7 @@
         <button class="botonNavegacion" id="botonTransform">Transform.</button>
         <button class="botonNavegacion" id="botonTransiciones">Transiciones</button>
         <button class="botonNavegacion" id="botonAnimaciones">Animaciones</button>
-        <button class="botonNavegacion" id="botonColMultiples">Col<br>Múltiples</button>
+        <button class="botonNavegacion" id="botonColumnasyListas">Col<br>Múltiples</button>
         <button class="botonNavegacion" id="botonColor">Color</button>
         <button class="botonNavegacion" id="botonDegradados">Degradados</button>
         <button class="botonNavegacion" id="botonFlexBox1">FlexBox 1</button>
@@ -47,7 +47,7 @@
             document.getElementById("contenido").src="fondos.html";
         }
 
-        function mostrarEfectosTexto(){
+        function mostrarEfectosTextoHtml(){
             document.getElementById("contenido").src="efectostexto.html";
         }
 
@@ -67,8 +67,8 @@
             document.getElementById("contenido").src="animaciones.html";
         }
 
-        function mostrarColMultiplesHtml(){
-            document.getElementById("contenido").src="colmultiples.html";
+        function mostrarColumnasyListas(){
+            document.getElementById("contenido").src="ColumnasyListas.html";
         }
 
         function mostrarColorHtml(){
@@ -93,8 +93,12 @@
 
         document.getElementById("botonBordes").onclick=mostrarBordesHtml;
         document.getElementById("botonFondos").onclick=mostrarFondosHtml;
-        document.getElementById("botonEfectosTexto").onclick=mostrarEfectosTexto;
-        
+        document.getElementById("botonEfectosTexto").onclick=mostrarEfectosTextoHtml;
+        document.getElementById("botonTransform").onclick=mostrarTransformHtml;
+
+
+
+        document.getElementById("botonColumnasyListas").onclick=mostrarColumnasyListas;
 
 
         document.getElementById("botonPlantilla").onclick=mostrarPlantilla;

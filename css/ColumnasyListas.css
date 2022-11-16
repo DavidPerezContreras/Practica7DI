@@ -1,0 +1,49 @@
+.fondo{
+    background-color:rgb(9, 49, 224) !important;
+       color: whitesmoke !important;
+   }
+.jfv_columnacount{
+    column-count: 3;
+}
+.jfv_columnagap{
+    
+    column-count: 3;
+    column-gap: 40px;
+}
+.jfv_columnarulestyle{
+    column-count: 3;
+    column-rule-style: solid;
+}
+.jfv_columnarulewidth{
+    column-count: 3;
+    column-rule-width: 10px;
+}
+.jfv_columnarulecolor{
+    column-rule-color: black;
+    column-count: 3;
+}
+.jfv_columnarule{
+    column-rule: 2px solid black;
+    column-count: 3;
+}
+ol.jfv_a {list-style-type: armenian;}
+ol.jfv_b {list-style-type: cjk-ideographic;}
+ol.jfv_c {list-style-type: decimal;}
+ol.jfv_d {list-style-type: decimal-leading-zero;}
+ol.jfv_e {list-style-type: georgian;}
+ol.jfv_f {list-style-type: hebrew;}
+ol.jfv_g {list-style-type: hiragana;}
+ol.jfv_h {list-style-type: hiragana-iroha;}
+ol.jfv_i {list-style-type: katakana;}
+ol.jfv_j {list-style-type: katakana-iroha;}
+ol.jfv_k {list-style-type: lower-alpha;}
+ol.jfv_l {list-style-type: lower-greek;}
+ol.jfv_m {list-style-type: lower-latin;}
+ol.jfv_n {list-style-type: lower-roman;}
+ol.jfv_o {list-style-type: upper-alpha;}
+ol.jfv_p {list-style-type: upper-latin;}
+ol.jfv_q {list-style-type: upper-roman;}
+ol.jfv_r {list-style-type: none;}
+ol.jfv_s {list-style-type: inherit;}
+ol.jfv_t {line-height:180%}
+

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones</title>
+
+
+    <style>
+        body{
+            padding-left: 30%;
+            padding-right:30%;
+        }
+
+        .seccion{
+            background-color:#E7E9EB ;
+        }
+
+        h1{
+            margin-top:40px;
+        }
+
+
+        h2.dd{
+            margin-top:115px;
+        }
+
+
+        .seccion{
+            border:1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Propiedades para definir las transformaciones</h1>
+    <div class="seccion">
+    <h2 style="text-align: center;">transform</h2>
+    <p>
+        Especifica la transformación a realizar sobre el elemento. Se define como una lista
+        separada por espacios de transformaciones que se aplican en orden una después de 
+        la otra, tal y como es requerido por la operacion de composición.
+    </p>
+    <p>Su uso es el siguiente:</p>
+    <p style="text-align: center;">transform: propiedad(parametro);</p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">transform-origin</h2>
+        <p>
+            Especifica la posición de origen que se usara para la transformación. Por defecto
+            es el lado superior izquierdo del elemento. Esta posición es usada por varias
+            transformaciones como rotar, escalar o torcer ya que necesitan de este punto
+            específico como parametro.
+        </p>
+        <p>Su uso es el siguiente:</p>
+        <p style="text-align: center;">transform-origin: punto de referencia;</p>
+        <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotate(90deg); margin-left: 130px;">
+            transform-origin: bottom right
+        </div>
+        <p>
+            En el ejemplo superior hemos rotado 90 grados el elemento, tomando como <b>punto de referencia</b> la esquina inferior derecha (bottom right).
+            otras opciones habrían sido top left, top right, etc...
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">transform-style</h2>
+        <p>
+            Esta propiedad define como se representan los elementos anidados en el
+            espacio 3D. Para utilizarla, debe ir acompañada de la propiedad
+            <b>transform.</b>
+        </p>
+        <p>Su uso es el siguiente:</p>
+        <p style="text-align: center;">transform: flat o preserve-3d;</p>
+        <p>
+            La opción <b>flat</b> hará que los elementos anidados no conserven su posición en 3D, haciendo <b>preserve-3d</b> justamente lo contrario.
+            Si deseamos tener elementos totalmente 3D, debemos usarlo junto a la propiedad <b>perspective</b> en el elemento padre.
+        </p>
+    </div>
+    <h2 class="dd" style="text-align: center;">Transformaciones 2D</h2>
+    <div class="seccion">
+        <h2 style="text-align: center;">translate(x,y)</h2>
+        <p>
+            Tenemos el siguiente div, en el que mostramos un cuadrado, y donde aplicaremos las transformaciones:
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid;">
+                Cuadrado
+            </div>
+            <br>
+            A este cuadrado lo vamos a desplazar de su posición de origen mediante la utilización de la propiedad <b>translate(x,y)</b>.
+            Podemos especificar las coordenadas X (o usar <b>translateX</b>), Y (o <b>translateY</b>), o ambas, tanto con píxeles como con porcentajes, con valores positivos o negativos.
+            <p>Lo desplazamos de su posición de origen 50 píxeles a la derecha, y 10 píxeles hacia abajo, utilizando el siguiente código (recuerda añadir los identificadores de navegador):</p>
+            <p style="text-align: center;">transform:translate(50px,10px);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform:translate(50px,10px);">
+                translate
+                (50px,10px)
+            </div>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">rotate(deg)</h2>
+        <p>
+            Podemos rotar nuestro cuadrado 45º sobre su propio eje, utilizando la propiedad <b>rotate(angulo)</b> (recuerda añadir los identificadores de navegador):
+            <p style="text-align: center;">transform:rotate(45deg);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform:rotate(45deg); margin: 25px;">
+                rotate<br>
+                45º
+            </div>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">scale(escala x, escala y)</h2>
+        <p>
+            En esta transformación, aumentamos en un 50% la anchura del cuadrado y en un 20% su altura. Para ello, hacemos uso de la propiedad <b>scale(x,y)</b>, de la siguiente manera
+            (recuerda añadir los identificadores de navegador):
+            <p style="text-align: center;">transform:scale(1.5,1.2);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform:scale(1.5,1.2); margin: 20px;">
+                scale<br>
+                1.5,1.2
+            </div>
+            <p>Podemos escalarlo en X (o usar <b>scaleX</b>), Y (o <b>scaleY</b>), o ambas a la vez. Introduciendo valores menores que 1 (o 100%), se reduciría la escala;
+            si se utilizan valores superiores a 1 (o 100%), se escalaría a un tamaño superior al del elemento original.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">skew(deg x, deg y)</h2>
+        <p>
+            Con esta propiedad podemos inclinar o aplicar un tipo de perspectiva a un elemento. Para utilizarla, tenemos que especificar las coordenadas de los ángulos de inclinación (x,y),
+            el primer valor se aplica horizontalmente, e Y se aplica verticalmente.
+            <p>Podemos aplicarlo tanto en ambos ejes, como únicamente en uno de ellos (con <b>skewX</b> y <b>skewY</b>).</p>
+            <p>Su uso es el siguiente:</p>
+            <p style="text-align: center;">transform: skew(30deg,5deg);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: skew(30deg,5deg); margin: 25px;">
+                skew<br>
+                30deg, 5deg
+            </div>
+            <p>Lo que se ha hecho con el elemento es inclinar el ángulo 30 grados con respecto al eje X, y 5 grados respecto al eje Y.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">matrix(escala X, inclinación sobre eje X, inclinación sobre eje Y, escala Y, desplazamiento horizontal, desplazamiento vertical)</h2>
+        <p>
+            Esta propiedad combina las propiedades anteriores, <b>excepto rotate</b>, en una sola.
+            <p style="text-align: center;">transform: matrix(0.866,0.5,-0.5,0.866,10,0);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: matrix(0.866,0.5,-0.5,0.866,10,0); margin: 25px;">
+                matrix<br>
+                (0.866,0.5,-0.5,<br>
+                0.866,10,0)
+            </div>
+            <p>Hemos escalado 0.866 en X, inclinado 0.5 sobre el eje X, inclinado -0.5 sobre Y, escalado 0.866 en Y y desplazado 10 en X.</p>
+        </p>
+    </div>
+    <hr>
+    <h2 class="dd" style="text-align: center;">Transformaciones 3D</h2>
+    <div class="seccion">
+        <h2 style="text-align: center;">translateX(x)</h2>
+        <p>
+            Tiene, prácticamente, la misma función que su análogo <b>translate(x)</b>.
+            <p>Su uso es el siguiente:</p>
+            <p style="text-align: center;">transform: translateX(50px);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform:translate(50px);">
+                translateX
+                (50px)
+            </div>
+            <p>Hemos desplazado nuestro elemento 50px en sentido del eje X positivamente, es decir, a la derecha.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">translateY(y)</h2>
+        <p>
+            Tiene, prácticamente, la misma función que su análogo <b>translate(0,y)</b>:
+            <p>Su uso es el siguiente:</p>
+            <p style="text-align: center;">transform: translateY(-25px);</p>
+            <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform:translateY(-25px);">
+                translateY
+                (25px);
+            </div>
+            <p>Hemos desplazado el elemento 25px en sentido negativo del eje Y, es decir, hacia arriba.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">translateZ(z)</h2>
+        <p>
+            Con esta propiedad podemos acercar o alejar el elemento al que apliquemos el estilo.
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">transform: translateZ(100px);</p>
+            <div style="background-color: #E9DF22; width: 125px; height: 125px; border: 1px; border-style: solid;">
+                <div style="background-color: #E9DF22; width: 125px; height: 125px; border: 1px; border-style: solid; perspective: 600px;">
+                    <div style="background-color: #FFF000; width: 90px; height: 80px; text-align: center; transform: translateZ(100px); margin: auto; margin-top: 20px;">
+                        translateZ
+                        (100px);
+                    </div>
+                </div>
+            </div>
+            <p>Como puede verse, hemos acercado 100px el elemento, por lo que vemos el elemento con mayor tamaño. Es necesario hacer uso de <b>perspective</b> en un elemento padre para poder apreciar
+            la transformación.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">translate3d(x,y,z)</h2>
+        <p>
+            Con esta propiedad combina las tres propiedades anteriores en una sola, por lo podemos desplazar el elemento en las tres dimensiones a la vez,
+            indicándole los valores para cada eje.
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">transform: translate3d(50px,10px,100px);</p>
+            <div style="background-color: #FFFFFF; width: 100px; height: 100px; border: 1px; border-style: solid;">
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: translate3d(50px,10px,100px);">
+                    translate3d
+                    (50px,10px,
+                    100px);
+                </div>
+            </div>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">rotateX(deg)</h2>
+        <p>
+            Con esta propiedad rotamos el elemento, tomándolo desde su centro, respecto al eje X.
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">transform: rotateX(45deg);</p>
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotateX(45deg);">
+                    rotateX
+                    (45deg);
+                </div>
+                <p>Como puede verse, hemos rotado 45 grados sobre el eje X. El resultado no es muy vistoso debido a la <b>perspectiva</b>.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">rotateY(deg)</h2>
+        <p>
+            Con esta propiedad rotamos el elemento, tomándolo desde su centro, respecto al eje Y.
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">transform: rotateY(45deg);</p>
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotateY(45deg);">
+                    rotateY
+                    (45deg);
+                </div>
+                <p>Como puede verse, hemos rotado 45 grados sobre el eje Y. El resultado no es muy vistoso debido a la <b>perspectiva</b>.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">rotateZ(deg)</h2>
+        <p>
+            Con esta propiedad rotamos el elemento, tomándolo desde su centro, respecto al eje Z.
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">transform: rotateZ(90deg);</p>
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotateZ(90deg);">
+                    rotateZ
+                    (90deg);
+                </div>
+                <p>Como puede verse, hemos rotado 90 grados sobre el eje Z, por lo que ahora el elemento está tumbado.</p>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">rotate3d(x,y,z,angulo)</h2>
+        <p>
+            Con esta propiedad combinamos el uso de las tres anteriores, pudiendo rotar el elemento en tres dimensiones simultáneamente.
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">transform: rotate3d(0.7, 0.5, 0.7, 45deg);</p>
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotate3d(0.7, 0.5, 0.7, 45deg); margin: 15px;">
+                    transform:
+                    rotate3d
+                    (0.7, 0.5,
+                    0.7, 45deg)
+                </div>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">perspective(n)</h2>
+        <p>
+            Esta propiedad añade profundidad para dar la sensación de 3D a las transformaciones. Cuanto más grande sea el valor, más alejada será la
+            perspectiva y más sútil será el efecto 3D.
+            <p>Sin esta propiedad, no podemos apreciar las transformaciones en el eje Z, ya que si no la utilizamos no tendremos profundidad en el plano.</p>
+            <p>No disponible en Chrome 30 / Opera 17</p>
+            <p>Su utilización es la siguiente:</p>
+            <p style="text-align: center;">perspective: distancia;</p>
+            <p style="text-align: center;">transform: perspective(distancia);</p>
+            <p>Vamos a ver los ejemplos anteriores, pero ahora contenidos en un elemento padre con perspectiva de 600 píxeles <b>(perspective: 600px;)</b>:</p>
+            <div style="background-color: #E9DF22; width: 125px; height: 125px; border: 1px; border-style: solid; perspective: 600px;">
+                <div style="background-color: #FFF000; width: 90px; height: 80px; text-align: center; transform: translateZ(100px); margin: auto; margin-top: 20px;">
+                    translateZ
+                    (100px);
+                </div>
+            </div>
+            <br>
+            <div style="background-color: #FFFFFF; width: 100px; height: 100px; border: 1px; border-style: solid; perspective: 600px;">
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotateX(45deg); margin: auto;">
+                    rotateX
+                    (45deg);
+                </div>
+            </div>
+            <br>
+            <div style="background-color: #FFFFFF; width: 100px; height: 100px; border: 1px; border-style: solid; perspective: 600px;">
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotateY(45deg); margin: auto;">
+                    rotateY
+                    (45deg);
+                </div>
+            </div>
+        </p>
+    </div>
+    <hr>
+    <div class="seccion">
+        <h2 style="text-align: center;">perspective-origin: ejeX ejeY</h2>
+        <p>
+            Con esta propiedad definimos la posición del "espectador" para la perspectiva de los elementos.
+            <p>Por defecto, esta propiedad está centrada en el espectador (<b>perspective-origin:50% 50%;</b>).</p>
+            <p>Su utilización es la siguiente, definiendo un valor para la posición en cada eje:</p>
+            <p style="text-align: right;">perspective-origin: (left|center|right|px|%) (top|center|bottom|px|%);</p>
+            <div style="background-color: #FFFFFF; width: 100px; height: 100px; border: 1px; border-style: solid; perspective: 600px;">
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid; transform: rotateX(45deg); margin: auto;">
+                transform:
+                rotate3d<br>
+                (0.7, 0.5,<br>
+                0.7, 45deg)
+                </div>
+            </div>
+            <br>
+            <div style="background-color: #FFFFFF; width: 100px; height: 100px; border: 1px; border-style: solid; perspective-origin: 200% bottom;">
+                <div style="background-color: #FFF000; width: 100px; height: 100px; text-align: center; border: 1px; border-style: solid;transform: rotate3d(0.7, 0.5, 0.7, 45deg); margin: 15px;">
+                    transform:
+                    rotate3d<br>
+                    (0.7, 0.5,<br>
+                    0.7, 45deg)
+                </div>
+            </div>
+            <br>
+            <p>Si no se usa Chrome(versión actual 30)/Opera(versión actual 17), puede verse como cambia la vista del elemento con sólo desplazar de posición
+                la perspectiva del espectador, utilizando en el elemento contenedor los siguientes valores:</p>
+            <p style="text-align: center;">perspective-origin: 200% bottom;</p>
+        </p>
+    </div>
+</body>
+</html>
