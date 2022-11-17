@@ -17,7 +17,7 @@
     display: flex;
     box-sizing: border-box;
     width:100vw;
-    height:70vh;
+    height:66vh;
 }
 
 iframe{
@@ -46,7 +46,12 @@ iframe{
 }
 
 #footer{
-
+    display: flexbox;
+    box-sizing: border-box;
+    width:100vw;
+    text-align: center;
+    color: #E7E9EB;
+    font-size: 18px;
 }
 
 
