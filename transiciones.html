@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/transiciones.css">
+</head>
+
+<body>
+
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Transiciones</h2>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--Tabla-->
+        <div>
+            <nav class="rrc-explicacion">
+              <table>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+                <tr>
+                    <td>transition</td>
+                    <td>Es una propiedad que acorta la configuración de las cuatro propiedades posibles para transition</td>
+                </tr>
+                <tr>
+                    <td>transition-property</td>
+                    <td>Especifica el nombre de la propiedad CSS a la que se le aplica la transición</td>
+                </tr>
+                <tr>
+                    <td>transition-duration</td>
+                    <td>Define la duración que tendrá la transición. Por defecto es 0</td>
+                </tr>
+                <tr>
+                    <td>transition-delay</td>
+                    <td>Define cuando comenzará la transición. Por defecto es 0</td>
+                </tr>
+                <tr>
+                    <td>transition-timing-function</td>
+                    <td>Describe la velocidad con la que la transición será calculada. Por defecto es "ease"</td>
+                </tr>
+              </table>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Transition</h2>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--Transition-->
+        <div id="Transition">
+            <nav class="rrc-explicacion">
+                <h3>Transition</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Es una propiedad que acorta la configuración de las cuatro propiedades posibles para transition</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition{ <br>
+                        transition: all 2s 1s ease; /* Especifico todas las características de transition */ <br>
+                        -webkit-transition: all 2s 1s ease; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Transition-property</h2>
+                 <ul class="rrc-indice">
+                    <li><a href="#Transition-propertyALL">Transition-property: all</a></li>
+                    <li><a href="#Transition-propertyNONE">Transition-property: none</a></li>
+                    <li><a href="#Transition-propertyPROPIEDAD">Transition-property: 'propiedad'</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--Transition-property: all-->
+        <div id="Transition-propertyALL">
+            <nav class="rrc-explicacion">
+                <h3>Transition-property: all</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Especifica el nombre de la propiedad CSS a la que se le aplica la transición, en este caso a todas</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransitionALL{ <br>
+                        transition-property: all /* Todas las propiedades se aplican */ <br>
+                        transition-duration: 2s /* Tarda en realizarse 2 segundos la transición */ <br>
+                        -webkit-transition-property: all; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransitionALL:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-propertyALL">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <br>
+    <!--Transition-property: none-->
+    <div id="Transition-propertyNONE">
+        <nav class="rrc-explicacion">
+            <h3>Transition-property: none</h3>
+            <!--Explicacion-->
+            <p class="rrc-texto">Especifica el nombre de la propiedad CSS a la que se le aplica la transición, en este caso a ninguna</p>
+            <p class="rrc-codigo">
+                <!--codigo-->
+                .DivTransitionNONE{ <br>
+                    transition-property: none /* Ninguna de las propiedades se aplican (no hay transición) */ <br>
+                    transition-duration: 2s /* Tarda en realizarse 2 segundos la transición, pero en este caso no se realiza */ <br>
+                    -webkit-transition-property: none; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                }<br>
+                <br>
+                .DivTransitionNONE:hover{<br>
+                    background-color: green;<br>
+                    transform: rotate(360deg);<br>
+                    -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                }
+            </p>
+            <!--muestra-->
+            <div class="rrc-enseño">
+                <div class="DivTransition-propertyNONE">Mantenga el ratón aquí</div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!------------------------------------------------------>
+<br>
+<!--Transition-property: 'propiedad'-->
+<div id="Transition-propertyPROPIEDAD">
+    <nav class="rrc-explicacion">
+        <h3>Transition-property: 'propiedad'</h3>
+        <!--Explicacion-->
+        <p class="rrc-texto">Especifica el nombre de la propiedad CSS a la que se le aplica la transición, en este caso sólo a las especificadas</p>
+        <p class="rrc-codigo">
+            <!--codigo-->
+            .DivTransitionPROPIEDAD{ <br>
+                transition-property: transform /* Se aplica la transición sólo a la rotación (el color se cambia instantaneamente) */ <br>
+                transition-duration: 2s /* Tarda en realizarse 2 segundos la transición, pero en este caso sólo se aplica a transform */ <br>
+                -webkit-transition-property: none; /* El -webkit- se utiliza para el navegador Safari */ <br>
+            }<br>
+            <br>
+            .DivTransitionPROPIEDAD:hover{<br>
+                background-color: green;<br>
+                transform: rotate(360deg);<br>
+                -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+            }
+        </p>
+        <!--muestra-->
+        <div class="rrc-enseño">
+            <div class="DivTransition-propertyPROPIEDAD">Mantenga el ratón aquí</div>
+        </div>
+    </nav>
+</div>
+</div>
+<!------------------------------------------------------>
+<div class="seccion">
+    <div class="rrc-marco-indice">
+        <div>
+            <h2>Transition-duration</h2>
+             <ul class="rrc-indice">
+                <li><a href="#Transition-duration0">Transition-duration: 0</a></li>
+                <li><a href="#Transition-duration1">Transition-duration: +0</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <br>
+        <!--Transition-duration: 0-->
+        <div id="Transition-duration0">
+            <nav class="rrc-explicacion">
+                <h3>Transition-duration: 0</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Define la duración que tendrá la transición. Por defecto es 0</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-duration0{ <br>
+                        transition-duration: 0s /* La transición durará 0 segundos */ <br>
+                        -webkit-transition-duration: 0s; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-duration0:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño center-contenedor">
+                    <div class="DivTransition-duration0">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <br>
+        <!--Transition-duration: +0-->
+        <div id="Transition-duration1">
+            <nav class="rrc-explicacion">
+                <h3>Transition-duration: +0</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Define la duración que tendrá la transición, en este caso mostraré una duración superior a 0</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-duration1{ <br>
+                        transition-duration: 4s /* La transición durará 4 segundos */ <br>
+                        -webkit-transition-duration: 4s; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-duration1:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-duration1">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+         <div>
+            <h2>Transition-delay</h2>
+            <ul class="rrc-indice">
+                <li><a href="#Transition-delay0">Transition-delay: 0</a></li>
+                <li><a href="#Transition-delay1">Transition-delay: +0</a></li>
+             </ul>
+        </div>
+    </div>
+     <!------------------------------------------------------>
+     <br>
+     <!--Transition-delay: 0-->
+     <div id="Transition-delay0">
+         <nav class="rrc-explicacion">
+             <h3>Transition-delay: 0</h3>
+             <!--Explicacion-->
+             <p class="rrc-texto">Define cuando comenzará la transición. Por defecto es 0</p>
+             <p class="rrc-codigo">
+                 <!--codigo-->
+                 .DivTransition-delay0{ <br>
+                     transition-delay: 0s /* Comenzará a aplicarse la transición tras 0 segundos */ <br>
+                     transition-duration: 2s /* La transición durará 2 segundos */
+                     -webkit-transition-delay: 0s; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                 }<br>
+                 <br>
+                 .DivTransition-delay0:hover{<br>
+                     background-color: green;<br>
+                     transform: rotate(360deg);<br>
+                     -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                 }
+             </p>
+             <!--muestra-->
+             <div class="rrc-enseño">
+                 <div class="DivTransition-delay0">Mantenga el ratón aquí</div>
+             </div>
+         </nav>
+     </div>
+ </div>
+</div>
+<!------------------------------------------------------>
+<br>
+<!--Transition-delay: +0-->
+        <div id="Transition-delay1">
+            <nav class="rrc-explicacion">
+                <h3>Transition-delay: +0</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Define cuando comenzará la transición, en este caso mostraré un delay mayor a 0</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-delay1{ <br>
+                        transition-delay: 3s /* Comenzará a aplicarse la transición tras 3 segundos */ <br>
+                        transition-duration: 2s /* La transición durará 2 segundos */
+                        -webkit-transition-delay: 3s; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-delay1:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-delay1">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+         <div>
+            <h2>Transition-timing-function</h2>
+            <ul class="rrc-indice">
+                <li><a href="#Transition-ease">Transition-timing-function: ease</a></li>
+                <li><a href="#Transition-linear">Transition-timing-function: linear</a></li>
+                <li><a href="#Transition-ease-in">Transition-timing-function: ease-in</a></li>
+                <li><a href="#Transition-ease-out">Transition-timing-function: ease-out</a></li>
+                <li><a href="#Transition-ease-in-out">Transition-timing-function: ease-in-out</a></li>
+             </ul>
+        </div>
+    </div>
+    <br>
+<!--Transition-timing-function: ease-->
+        <div id="Transition-ease">
+            <nav class="rrc-explicacion">
+                <h3>Transition-timing-function: ease</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Describe la velocidad con la que la transición será calculada. Por defecto es "ease"</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-timing-functionEASE{ <br>
+                        transition-timing-function: ease; /* Inicio lento, después rápido, final lento */ <br>
+                        transition-duration: 2s /* La transición durará 2 segundos */
+                        -webkit-transition-timing-function: ease; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-timining-functionEASE:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-timing-functionEASE">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+        <br>
+<!--Transition-timing-function: linear-->
+        <div id="Transition-linear">
+            <nav class="rrc-explicacion">
+                <h3>Transition-timing-function: linear</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Describe la velocidad con la que la transición será calculada. En este caso es linear</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-timing-functionLINEAR{ <br>
+                        transition-timing-function: linear; /* Misma velocidad al incio y al final*/ <br>
+                        transition-duration: 2s /* La transición durará 2 segundos */
+                        -webkit-transition-timing-function: linear; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-timing-functionLINEAR:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-timing-functionLINEAR">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br>
+<!--Transition-timing-function: ease-in-->
+        <div id="Transition-ease-in">
+            <nav class="rrc-explicacion">
+                <h3>Transition-timing-function: ease-in</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Describe la velocidad con la que la transición será calculada. En este caso es ease-in</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-timing-functionEASE-IN{ <br>
+                        transition-timing-function: ease-in; /* Inicio lento */ <br>
+                        transition-duration: 2s /* La transición durará 2 segundos */
+                        -webkit-transition-timing-function: ease-in; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-timing-functionEASE-IN:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-timing-functionEASE-IN">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+        <br>
+<!--Transition-timing-function: ease-out-->
+        <div id="Transition-ease-out">
+            <nav class="rrc-explicacion">
+                <h3>Transition-timing-function: ease-out</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Describe la velocidad con la que la transición será calculada. En este caso es ease-out</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-timing-functionEASE-OUT{ <br>
+                        transition-timing-function: ease-out; /* Final lento */ <br>
+                        transition-duration: 2s /* La transición durará 2 segundos */
+                        -webkit-transition-timing-function: ease-out; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-timing-functionEASE-OUT:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-timing-functionEASE-OUT">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+            <br>
+<!--Transition-timing-function: ease-in-out-->
+        <div id="Transition-ease-in-out">
+            <nav class="rrc-explicacion">
+                <h3>Transition-timing-function: ease-in-out</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Describe la velocidad con la que la transición será calculada. En este caso es ease-in-out</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .DivTransition-timing-functionEASE-IN-OUT{ <br>
+                        transition-timing-function: ease-in-out; /* Inicio y final lentos */ <br>
+                        transition-duration: 2s /* La transición durará 2 segundos */
+                        -webkit-transition-timing-function: ease-in-out; /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }<br>
+                    <br>
+                    .DivTransition-timing-functionEASE-IN-OUT:hover{<br>
+                        background-color: green;<br>
+                        transform: rotate(360deg);<br>
+                        -webkit-transform: rotate(360deg); /* El -webkit- se utiliza para el navegador Safari */ <br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño">
+                    <div class="DivTransition-timing-functionEASE-IN-OUT">Mantenga el ratón aquí</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br><br>
+</body>
+
+</html>

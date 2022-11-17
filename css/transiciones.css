@@ -1,0 +1,158 @@
+.DivTransition{
+    transition: all 2s 1s ease;
+    -webkit-transition: all 2s 1s ease;
+}
+
+.DivTransition:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.rrc-enseño{
+    display: flex;
+    justify-content: center;
+}
+
+table, td, th, tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px;
+}
+th{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.DivTransition-propertyALL{
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.DivTransition-propertyALL:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-propertyNONE{
+    transition-property: none;
+    transition-duration: 2s;
+}
+
+.DivTransition-propertyNONE:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-propertyPROPIEDAD{
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+.DivTransition-propertyPROPIEDAD:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-duration0{
+    transition-duration: 0s;
+}
+
+.DivTransition-duration0:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-duration1{
+    transition-duration: 4s;
+}
+
+.DivTransition-duration1:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-delay0{
+    transition-delay: 0s;
+    transition-duration: 2s;
+}
+
+.DivTransition-delay0:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-delay1{
+    transition-delay: 3s;
+    transition-duration: 2s;
+}
+
+.DivTransition-delay1:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-timing-functionEASE{
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+.DivTransition-timing-functionEASE:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-timing-functionLINEAR{
+    transition-timing-function: linear;
+    transition-duration: 2s;
+}
+
+.DivTransition-timing-functionLINEAR:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-timing-functionEASE-IN{
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+
+.DivTransition-timing-functionEASE-IN:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-timing-functionEASE-OUT{
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+.DivTransition-timing-functionEASE-OUT:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.DivTransition-timing-functionEASE-IN-OUT{
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+}
+
+.DivTransition-timing-functionEASE-IN-OUT:hover{
+    background-color: green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}

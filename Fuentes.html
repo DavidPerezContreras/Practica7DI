@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/fuentes.css">
+    <link rel="stylesheet" href="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Incosolata:italic|Droid+sans">
+
+
+
+    <style>
+        body{
+            margin-left:30vw;
+            margin-right:30vw;
+        }
+
+        div.seccion{
+            background-color: #E7E9EB;
+        }
+        .seccion{
+            border:1px solid black;
+            padding: 20px;
+            margin-bottom:40px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <div ><!--Contenido apartado 1-->
+            <h2 id="tituloPractica">Importar fuentes - @font-face y font-family</h2>
+            <div class="seccion"><!--Seccion 1-->
+                <p class="cliente">Aquí hacemos uso de una fuente local del equipo cliente</p>
+                <p>Esto lo tenemos que introducir dentro de nuestro CSS como una regla más para definir la familia de fuente a usar.</p>
+                <p class="codigo">font-family: Helvetica, Verdana;</p>
+            </div>
+            <div class="seccion"><!--Seccion 2-->
+                <p class="importada">Aquí hacemos uso de una fuente importada de forma remota</p>
+                <p>En el html enlazamos un nuevo estilo desde Google fonts, dentro de la etiqueta "head"</p>
+                <p class="codigo">&lt;link rel="stylesheet" href="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Incosolata:italic|Droid+sans"&gt;</p>
+                <p>Y dentro de nuestro fiche CSS le asignamos las familias, como haríamos normalmente con las fuentes nativas</p>
+                <p class="codigo">&lt;font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;&gt;</p>
+            </div>
+            <div class="seccion"><!--Seccion 3-->
+                <p class="local">Aquí hacemos uso de una fuente importada localmente
+                <p>Para ello hacemos uso de la etiqueta "@font-face" que nos permite configurar 
+                    una nueva fuente. Los parametros a tener en cuenta son "font-family" en el cual 
+                    le indicamos qué nombre le queremos dar a nuestra nueva familia de fuente, y src
+                    en el cual le indicaremos la ruta hacia nuestras fuentes, que pueden estar en 
+                    varios formatos distintos para asegurarnos la compatibilidad con cualquier 
+                    plataforma. El resto de parámetros son opcionales y permiten configurar otros 
+                    aspectos de nuestra fuente como el estilo, si debe tener los bordes suavizados, 
+                    etc...</p>
+                <p class="codigo">@font-face {<br>
+                    font-family: "FixedsysExcelsior301Regular";<br>
+                    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");<br>
+                }</p>
+            </div>
+
+            <h2 id="tituloPractica">Font-size</h2>
+            <div class="seccion"><!--Contenido apartado 2-->
+                
+                <div><!--Seccion 1-->
+                    <p>La propiedad font-size permite establecer el tamaño de letra del texto. Además de todas las unidades de medida absolutas y relativas conocidas
+                        (em, ex, px, %, in, cm, mm, pt, pc) también se pueden utilizar palabras clave que hacen referencia a tamaños de letra absolutos y relativos.
+                        
+                        Los tamaños de letra absolutos se establecen mediante las palabras clave xx-small, x-small, small, medium, large, x-large, xx-large. Aunque
+                        depende de cada navegador decidir el tamaño de las palabras clave, normalmente coinciden con los tamaños de los títulos de sección h1 a h6.</p>
+                    
+                    <p class="codigo">font-size: xx-large</p>
+                    <p style="font-size: xx-large;">font-size: xx-large</p>
+
+                    <p class="codigo">font-size: x-large</p>
+                    <p style="font-size: x-large;">font-size: x-large</p>
+
+                    <p class="codigo">font-size: large</p>
+                    <p style="font-size: large;">font-size: large</p>
+
+                    <p class="codigo">font-size: medium</p>
+                    <p style="font-size: medium;">font-size: medium</p>
+
+                    <p class="codigo">font-size: small</p>
+                    <p style="font-size: small;">font-size: small</p>
+
+                    <p class="codigo">font-size: x-small</p>
+                    <p style="font-size: x-small;">font-size: x-small</p>
+
+                    <p class="codigo">font-size: xx-small</p>
+                    <p style="font-size: xx-small;">font-size: xx-small</p>
+
+                    <p>Además de los tamaños absolutos, la propiedad font-size permite establecer el tamaño del texto de forma relativa mediante las palabras clave
+                        larger y smaller. La referencia que se toma para calcular un tamaño más grande (larger) o más pequeño (smaller) es el tamaño de letra del
+                        elemento contenedor.
+                        
+                        De todas las unidades de medida absolutas y relativas disponibles, se recomienda utilizar la unidad em para establecer el tamaño del texto. El
+                        motivo es que al tratarse de una unidad de medida relativa, se adapta fácilmente sin realizar cambios a cualquier dispositivo de acceso utilizado
+                        por los usuarios.
+                        
+                        Diferentes tamaños de texto establecidos mediante unidades relativas (en, %. px) y absolutas (pt):</p>
+                    
+                    <p class="codigo">font-size: 3em</p>
+                    <p style="font-size: 3em;">Texto 3em</p>
+
+                    <p class="codigo">font-size: 300%</p>
+                    <p style="font-size: 300%;">Texto 300%</p>
+
+                    <p class="codigo">font-size: 36px</p>
+                    <p style="font-size: 36px;">Texto 36px</p>
+
+                    <p class="codigo">font-size: 36pt</p>
+                    <p style="font-size: 36pt;">Texto 36pt</p>
+                    
+                </div>
+            </div>
+
+            <h2 id="tituloPractica">Font-weight</h2>
+            <div class="seccion"><!--Contenido apartado 3-->
+                
+                <div><!--Seccion 1-->
+                    <p>La propiedad font-weight permite establecer el grosor con el que se muestran las letras del texto. Normalmente, la propiedad font-weight se emplea para mostrar un texto en negrita (valor bold):</p>
+                    <p class="codigo">font-weight: bold</p>
+                    <p style="font-weight: bold;">Texto negrita</p>
+                    <p>El uso habitual de la propiedad font-weight es el de mostrar con un estilo normal un texto que originalmente se mostraba en negrita, como por ejemplo la etiqueta strong de HTML.</p>
+                </div>
+                <div><!--Seccion 2-->
+                    <p class="codigo">font-weight: normal</p>
+                    <p style="font-weight: normal;">Texto normal</p>
+                    <p>Casi ningún tipo de letra utilizado por los usuarios normales dispone de varios grosores diferentes, por lo tanto, hasta que todos los tipos de letra no incorporen varios grosores diferentes, los valores bolder y lighter carecen de utilidad práctica. <br>
+                    Además, las fuentes que disponen de muchos grosores diferentes utilizan nomenclatura que no es estándar y que, por lo tanto, varía de una fuente a otra.</p>
+                </div>
+                <div><!--Seccion 3-->
+                    <p class="codigo">font-weight: 200</p>
+                    <p style="font-weight: 200;">Texto font-weight: 200</p>
+                </div>
+                <div><!--Seccion 4-->
+                    <p class="codigo">font-weight: 900</p>
+                    <p style="font-weight: 900;">Texto font-weight: 900</p>
+                </div>
+            </div>
+
+
+            <h2 id="tituloPractica">Font-style</h2>
+            <div class="seccion"><!--Contenido apartado 4-->
+                
+                <div><!--Seccion 1-->
+                    <p>La propiedad font-style permite establecer el estilo cone el que se muestra el tipo de letra seleccionado mediante la propiedad font-family. Los tres estilos disponibles son: normal (normal), itálico, (italic) y oblicuo (oblique)</p>
+                    <p class="codigo">font-style: normal</p>
+                    <p style="font-style: normal;">Texto style normal</p>
+                </div>
+                <div><!--Seccion 2-->
+                    <p class="codigo">font-style: italic</p>
+                    <p style="font-style: normal;">Texto en cursiva</p>
+                </div>
+                <div><!--Seccion 3-->
+                    <p class="codigo">font-style: oblique</p>
+                    <p style="font-style: oblique;">Texto oblicuo</p>
+                    <p>Desafortunadamente, cuando un tipo de letra dispone del estilo cursiva, los navegadores muestran el estilo oblicuo con el mismo aspecto. Por este
+                        motivo, seguramente todos los caracteres del ejemplo anterior tienen el mismo aspecto cuando los ves en cualquier navegador.</p>
+                </div>
+            </div>
+
+
+            <h2 id="tituloPractica">Font-variant</h2>
+            <div class="seccion"><!--Contenido apartado 5-->
+                
+                <div><!--Seccion 1-->
+                    <p>La propiedad font-variant permite elegir la variante con la que se muestra el tipo de letra seleccionado mediante la propiedad font-family. Las
+                        únicas variantes disponibles en el estandar oficial son: normal (normal) y versalita (small-caps).
+                        
+                        La variante versalita muestra el texto con letras mayúsculas de un tamaño similar a las letras minúsculas.</p>
+                    <p class="codigo">font-variant: normal</p>
+                    <p style="font-variant: normal;">Texto normal</p>
+                </div>
+                <div><!--Seccion 2-->
+                    <p class="codigo">font-variant: small-caps</p>
+                    <p style="font-variant: small-caps;">Texto versalita</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

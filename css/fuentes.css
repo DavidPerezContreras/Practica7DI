@@ -1,0 +1,50 @@
+body{
+    background-color: #99CCFF;
+    margin:0;
+}
+
+#tituloPractica{
+    text-align: center;
+}
+
+#navegacion{
+    text-align: center;
+}
+
+#contenido{
+    display: flex;
+    box-sizing: border-box;
+    width:100vw;
+    height:80vh;
+}
+
+/*---V---Clases propias para font---V---*/
+
+.codigo {
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    padding:20px;
+}
+
+.cliente {
+    font-family: Helvetica, Verdana;
+    font-size: 20px;
+    color: black;
+}
+
+.importada {
+    font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;
+    font-size: 25px;
+    color: black;
+}
+
+@font-face {
+    font-family: "FixedsysExcelsior301Regular";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+}
+
+.local {
+    font-family: "FixedsysExcelsior301Regular", serif;
+    font-size: 25px;
+    color: black;
+}
