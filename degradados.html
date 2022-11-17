@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/degradados.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <div class="seccion">
+
+        <div class="rrc-marco-indice">
+            <div>
+               
+                <ul class="rrc-indice">
+                    <h1>Degradados</h1>
+                    <li><a href="#Dlineal">Degradado lineal</a></li>
+                    <li><a href="#Dcircular">Degradado circular</a></li>
+                    <li><a href="#Drepetitivo">Degradado repetitivo</a></li>
+                    <li><a href="#Dcolor">Colores multiples</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <div id="center">
+    
+            <nav class="rrc-explicacion">
+                <h2 id="Dlineal">Degradado Lineal</h2>
+                <h3>Degradado diagonal</h3>
+                <p>Sintaxis: linear-gardient(inicio, color1, color2)</p>
+                <p>Inicio puede tomar los valores: left o right y top o bottom, para dar forma diagonal.</p>
+                <p>Los degradados pueden causar problemas con ciertos navegadores, por eso es recomendable y en algunos casos obligatorio el especificar a que navegador va dirigido el codigo, existen los siguientes tipos: </p>
+                <ul>
+                    <li>-webkit-linear-gradient: Navegadores chrome o Safari.</li>
+                    <li>-o-linear-gradient: Navegadores Opera.</li>
+                    <li>-moz-linear-gradient: Navegadores Firefox.</li>
+                </ul>
+                <br>
+                    <p class="rrc-codigo">
+                       .diagonal{<br>
+                        &nbsp;&nbsp;width: 200px;<br>
+                        &nbsp;&nbsp;height: 200px;<br>
+                        &nbsp;&nbsp;border: 3px solid;<br>
+                        &nbsp;&nbsp;background: linear-gradient(top left , rgb(4, 143, 4) , rgb(35, 162, 212) );<br>
+                        &nbsp;&nbsp;background: -webkit-linear-gradient(top left , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores chrome o Safari*/<br>
+                        &nbsp;&nbsp;background: -o-linear-gradient(top left , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores Opera*/<br>
+                        &nbsp;&nbsp;background: -moz-linear-gradient(top left , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores Firefox*/<br>
+                        }<br>
+                    </p>
+                        <div class="diagonal"></div>
+
+                <p>El parámetro también puede tomar el valor en grados de inclinación ejemplo:</p>
+                <p class="rrc-codigo">
+                    .deg{<br>
+                        &nbsp;&nbsp;width: 200px;<br>
+                        &nbsp;&nbsp;height: 200px;<br>
+                        &nbsp;&nbsp;border: 3px solid;<br>
+                        &nbsp;&nbsp;background: linear-gradient(45deg , rgb(238, 7, 7), rgb(253, 252, 252) );<br>
+                    }<br> 
+                </p>
+                <div class="gr"></div>
+            </nav>
+        </div>
+            <br>
+
+            <div class="center">
+                <nav class="rrc-explicacion">
+                    
+                    <h3>Degradado izquierda a derecha</h3>
+                    <p>Para realizar degradados de izquierda a derecha y viceversa podemos hacerlo de la siguiente manera.</p>
+                    <p>Sintaxis: linear-gardient(inicio, color1, color2)</p>
+                    <p>Inicio puede tomar los valores: left o right.</p><br>
+                    <p class="rrc-codigo">
+                        .izdr{<br>
+                        &nbsp;&nbsp;width: 200px;<br>
+                        &nbsp;&nbsp;height: 200px;<br>
+                        &nbsp;&nbsp;border: 3px solid;<br>
+                        &nbsp;&nbsp;background: linear-gradient(left , rgb(4, 143, 4) , rgb(35, 162, 212) );<br>
+                        &nbsp;&nbsp;background: -webkit-linear-gradient( left , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores chrome o Safari*/<br>
+                        &nbsp;&nbsp;background: -o-linear-gradient( left , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores Opera*/<br>
+                        &nbsp;&nbsp;background: -moz-linear-gradient( left , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores Firefox*/<br> 
+                        }<br>
+                    </p>
+    
+                    <div class="izdr"></div>
+                </nav>
+
+        </div>
+        <br>
+        <div class="center">
+            <nav class="rrc-explicacion">
+                
+                <h3>Degradado de arriba hacia abajo y viceversa</h3>
+                <p>Sintaxis: linear-gardient(inicio, color1, color2)</p>
+                <p>Inicio puede tomar los valores: top o bottom.</p><br>
+                <p class="rrc-codigo">
+                    .arriba{<br>
+                        &nbsp;&nbsp;width: 200px;<br>
+                        &nbsp;&nbsp;height: 200px;<br>
+                        &nbsp;&nbsp;border: 3px solid;<br>
+                        &nbsp;&nbsp;background: linear-gradient(top , rgb(4, 143, 4) , rgb(35, 162, 212) );<br>
+                        &nbsp;&nbsp;background: -webkit-linear-gradient( top , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores chrome o Safari*/<br>
+                        &nbsp;&nbsp;background: -o-linear-gradient( top , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores Opera*/<br>
+                        &nbsp;&nbsp;background: -moz-linear-gradient( top , rgb(4, 143, 4) , rgb(35, 162, 212) );/*Navegadores Firefox*/<br> 
+                    }<br>
+                </p>
+
+                <div class="ab"></div>
+            </nav>
+            </div>
+            <br>
+            <div class="center">
+                <nav class="rrc-explicacion">
+                    
+                    <h3>Degradado : Ángulos</h3>
+                    <p>Tenemos dos opciones a la hora de definir un gradiente lineal, o bien definimos su punto de inicio, por ejemplo top o bien definimos su ángulo de inclinación en grados, grados centesimales o radianes, por ejemplo 45deg. Los puntos de inicio pueden ser top, right, left o bottom.</p>
+                    <p>Sintaxis: linear-gardient(90deg,color1, color2)</p>
+                 
+                    <p class="rrc-codigo">
+                        .angulo{<br>
+                            &nbsp;&nbsp; width: 200px;<br>
+                            &nbsp;&nbsp; height: 200px;<br>
+                            &nbsp;&nbsp; border: 3px solid;<br>
+                            &nbsp;&nbsp; background: linear-gradient(120deg , rgb(143, 4, 131) , rgb(216, 231, 9) );<br>
+                            &nbsp;&nbsp; background: -webkit-linear-gradient(120deg , rgb(143, 4, 131) , rgb(216, 231, 9) );/*Navegadores chrome o Safari*/<br>
+                            &nbsp;&nbsp; background: -o-linear-gradient(120deg , rgb(143, 4, 131) , rgb(216, 231, 9) );/*Navegadores Opera*/<br>
+                            &nbsp;&nbsp; background: -moz-linear-gradient(120deg , rgb(143, 4, 131) , rgb(216, 231, 9) );/*Navegadores Firefox*/<br>
+                        }<br>
+                    </p>
+    
+                    <div class="angulo"></div>
+
+                </nav>
+            </div>
+            <br>
+
+            <div class="center">
+                <nav class="rrc-explicacion">
+                    <h2 id="Dcircular">Degradado Circular</h2>
+                    <p>Los degradados radiales, que incluyen tanto los que tiene forma circular en general, como los que tienen forma de elipse, se consiguen a través del atributo radial-gradient.Mediante la aplicación de distintos parámetros, conseguiremos todas las posibilidades.</p>
+
+                    <p>Sintaxis: radial-gardient(Parámetro, color1, color2), si no especificamos los parámetros comenzará desde el centro</p>
+                    <p>Parámetro puede tomar los valores: left, right, top ,bottom y center.</p>
+                    <p>Otro parámetro interesante es la forma que puede tomar este tipo de degradado, son las siguientes: circle o ellipse.</p><br>
+                    <p class="rrc-codigo">
+                        .radial{<br>
+                            &nbsp;&nbsp;width: 200px;<br>
+                            &nbsp;&nbsp;height: 200px;<br>
+                            &nbsp;&nbsp;border: 3px solid;<br>
+                            &nbsp;&nbsp;background: radial-gradient(rgb(224, 224, 11) , rgb(28, 28, 204) );<br>
+                            &nbsp;&nbsp;background: -webkit-radial-gradient(  rgb(224, 224, 11) , rgb(28, 28, 204) );/*Navegadores chrome o Safari*/<br>
+                            &nbsp;&nbsp;background: -o-radial-gradient( rgb(224, 224, 11) , rgb(28, 28, 204) );/*Navegadores Opera*/<br>
+                            &nbsp;&nbsp;background: -moz-radial-gradient( rgb(224, 224, 11) , rgb(28, 28, 204) );/*Navegadores Firefox*/<br>
+                        }<br>
+                    </p>
+    
+                    <div class="radialdef"></div>
+                    <p>Ejemplo con ellipse: </p>
+                    <p class="rrc-codigo">
+                        .ellipse{<br>
+                            &nbsp;&nbsp;width: 200px;<br>
+                            &nbsp;&nbsp;height: 200px;<br>
+                            &nbsp;&nbsp;border: 3px solid;<br>
+                            &nbsp;&nbsp;background: radial-gradient(ellipse at center  , yellow, gold 50%,yellow 55%, red);<br>
+                        }<br> 
+                    </p>
+                    <div class="ellipse"></div>
+
+                </nav>
+            </div>
+            <br>
+            <div class="center">
+                <nav class="rrc-explicacion">
+                    
+                    <h3>Posiciones</h3>
+                    <p>Las diferentes posiciones que pueden tomar son las siguientes:</p>
+                    <ul>
+                        <li>closest-side: La forma final del degradado se encuentra con el lado del cuadro más cercano a su centro (para círculos) o con los lados vertical y horizontal más cercanos al centro (para elipses).</li>
+                        <li>farthest-side: Similar a closest-side, excepto que el tamaño de la forma final se ajusta al lado de la caja más alejado de su centro (o los lados vertical y horizontal).</li>
+                        <li>closest-corner: El tamaño de la forma final del degradado se ajusta de manera que coincida exactamente con la esquina más cercana del cuadro desde su centro.</li>
+                        <li>farthest-corner: El valor predeterminado, la forma final del degradado tiene un tamaño tal que coincida exactamente con la esquina más alejada del cuadro desde su centro.</li>
+                    </ul>
+                    <hr><br>
+
+            
+                            <p class="rrc-codigo">radial-gradient(closest-side at 60% 55%  , red 15%,yellow 50%, green);</p>
+                               <div class="pos pos1"></div> 
+                       
+                            <p class="rrc-codigo">radial-gradient(farthest-side at 60% 55%  , red 15%,yellow 50%, green); </p>
+                             <div class="pos pos2"></div> 
+                           
+                      
+
+                            <p class="rrc-codigo">radial-gradient(closest-corner at 60% 55%  , red 15%,yellow 50%, green); </p>
+                            <div class="pos pos3"></div> 
+                          
+                        
+                        
+                            <p class="rrc-codigo">radial-gradient(farthest-corner at 60% 55%  , red 15%,yellow 50%, green);</p>
+                            <div class="pos pos4"></div> 
+                          
+    
+                   
+                </nav>
+                </div>
+                <br>
+                <div class="center">
+                    <nav class="rrc-explicacion">
+                        
+                        <h3>Transparencia</h3>
+                        <p>Para agregar transparencia, usamos la función rgba() para definir los colores que formaran el degradado. El último parámetro en la función rgba() puede ser un valor de 0 a 1 y define la transparencia del color: 0 indica transparencia total, 1 indica color completo (sin transparencia).</p>
+                        <p>Sintaxis: linear-gardient(inicio, color1, color2)</p><br>
+                        <p class="rrc-codigo">
+                            .transparent{<br>
+                                &nbsp;&nbsp;width: 500px;<br>
+                                &nbsp;&nbsp;height: 100px;<br>
+                                &nbsp;&nbsp;border: 3px solid;<br>
+                                &nbsp;&nbsp;background: linear-gradient(right ,rgb(25, 48, 175), rgba(117, 19, 93, 0));<br>
+                                &nbsp;&nbsp;background: -webkit-linear-gradient(right, rgb(25, 48, 175), rgba(117, 19, 93, 0) );/*Navegadores chrome o Safari*/ <br> 
+                            }<br>
+                        </p>
+        
+                        <div class="transparent"></div>
+                    </nav>
+                    </div>
+                    <br>
+
+                    <div class="center">
+                        <nav class="rrc-explicacion">
+                            <h2 id="Drepetitivo">Degradados Repetitivos</h2>
+                            <h3>Degradado lineal repetitivo</h3>
+                            <p>Para realizar este tipo de degradado usaremos las propiedades axplicadas anteriormente junto al argumento (repeating), a continuación se muestra un ejemplo.</p>
+                            <p>Sintaxis: repeating-linear-gardient(inicio, color1, color2)</p><br>
+                            <p class="rrc-codigo">
+                                .lineaRepe{<br>
+                                    &nbsp;&nbsp;width: 600px;<br>
+                                    &nbsp;&nbsp; height: 200px;<br>
+                                    &nbsp;&nbsp; border: 3px solid;<br>
+                                    &nbsp;&nbsp; background: repeating-linear-gradient(rgb(224, 224, 11) , rgb(28, 28, 204) 10% );<br>
+                                    &nbsp;&nbsp; background: -webkit-repeating-linear-gradient(  rgb(224, 224, 11) , rgb(28, 28, 204) 10%);/*Chrome o Safari*/<br>
+                                    &nbsp;&nbsp; background: -o-repeating-linear-gradient( rgb(224, 224, 11) , rgb(28, 28, 204) );/*Navegadores Opera*/<br>
+                                    &nbsp;&nbsp; background: -moz-repeating-linear-gradient( rgb(224, 224, 11) , rgb(28, 28, 204) );/*Navegadores Firefox*/ <br> 
+                                }<br>
+                            </p>
+            
+                            <div class="lineaRepe"></div>
+                        </nav>
+                        </div>
+                        <br>
+
+                        <div class="center">
+                            <nav class="rrc-explicacion">
+                                
+                                <h3>Degradado radial repetitivo</h3>
+                                <p>Para realizar este tipo de degradado usaremos las propiedades axplicadas anteriormente junto al argumento (repeating), a continuación se muestra un ejemplo.</p>
+                                <p>Sintaxis: repeating-radial-gardient(inicio, color1, color2)</p><br>
+                                <p class="rrc-codigo">
+                                    .circularRepe{<br>
+                                        &nbsp;&nbsp; width: 300px;<br>
+                                        &nbsp;&nbsp; height: 200px;<br>
+                                        &nbsp;&nbsp; border: 3px solid;<br>
+                                        &nbsp;&nbsp; background: repeating-radial-gradient(rgb(245, 22, 208),rgb(42, 241, 42) 10%, rgb(117, 52, 202) 15% ); <br> 
+                                    }<br>
+                                </p>
+                
+                             <div class="circularRepe"></div>
+                        </nav>
+                        </div>
+                        <br>
+                        <div class="center">
+                            <nav class="rrc-explicacion">
+                                
+                                <h2 id="Dcolor">Colores múltiples en degradados</h2>
+                                <h3>Degradado colores múltiples</h3>
+                                <p>Los degradados permiten introducir gran cantidad de colores, y combinandolas con las propiedades explicadas anteriormente se pueden lograr infinidad de resultados.</p>
+                                <p>Sintaxis: linear-gardient(color1, color2,color3,.....)</p>
+                                <p>Ejemplo de arriba hacia abajo</p>
+                                <p class="rrc-codigo">
+                                    .MultiplesCol{<br>
+                                        &nbsp;&nbsp; width: 500px;<br>
+                                        &nbsp;&nbsp; height: 100px;<br>
+                                        &nbsp;&nbsp; border: 3px solid;<br>
+                                        &nbsp;&nbsp; background: linear-gradient(to top, red,pink,blue,green,yellow,purple);<br>
+                                    }<br>
+                                </p>
+                
+                                <div class="MultiplesCol"></div>
+                                <br>
+                                <p>Ejemplo de izquierda a derecha</p>
+                                <p class="rrc-codigo">
+                                    .MultiplesCol2{<br>
+                                        &nbsp;&nbsp; max-width: 700px;<br>
+                                        &nbsp;&nbsp; height: 80px;<br>
+                                        &nbsp;&nbsp; border: 3px solid;<br>
+                                        &nbsp;&nbsp; background: linear-gradient(to left, red,orange,blue,rgb(0, 119, 255),green,yellow,purple,pink);<br>
+                                    }<br>
+                                </p>
+                                <div class="MultiplesCol2"></div>
+
+                            </nav>
+                        </div>
+
+                        <br><br>
+                        
+
+    </div>
+
+
+
+</body>
+
+</html>

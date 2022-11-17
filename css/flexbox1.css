@@ -1,0 +1,54 @@
+/*propiedades direccion*/
+.column{
+display: flex;
+flex-direction: column;
+}
+
+.column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*FIN propiedades de direccion*/
+/*------------------------------------*/
+/*propiedades justify-content*/
+.center-contenedor {
+    display: flex;
+    justify-content: center;
+
+}
+
+.start-contenedor {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.end-contenedor {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.around-contenedor {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.between-contenedor {
+    display: flex;
+    justify-content: space-between;
+
+}
+/* FIN propiedades justify-content FIN*/

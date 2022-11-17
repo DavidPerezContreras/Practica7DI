@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/flexbox1.css">
+</head>
+
+<body>
+    <!------------------------------------------------------>
+    <!-----------------------DIRECCION---------------------->
+    <!------------------------------------------------------>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Propiedades dirección</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#column">Column</a></li>
+                    <li><a href="#column-reverse">Column-reverse</a></li>
+                    <li><a href="#row">Row</a></li>
+                    <li><a href="#row-reverse">Row-reverse</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--Column-->
+        <div id="column">
+            <nav class="rrc-explicacion">
+                <h3>Column</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Apila los objetos de arriba hacia abajo</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    flex-direction: column;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño column">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--Column-reverse-->
+        <div id="column-reverse">
+            <nav class="rrc-explicacion">
+                <h3>Column-reverse</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Apila los objetos de arriba hacia abajo</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    flex-direction: column-reverse;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño column-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--row-->
+        <div id="row">
+            <nav class="rrc-explicacion">
+                <h3>Row</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad apila los elemntos horizontalmente</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    flex-direction: row;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño row">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>   
+        <!------------------------------------------------------>
+        <br>
+        <!--row-reverse-->
+        <div id="row-reverse">
+            <nav class="rrc-explicacion">
+                <h3>Row-reverse</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad apila los elemntos horizontalmente pero del reves</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    flex-direction: row-reverse;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño row-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>   
+        
+    <!------------------------------------------------------>
+    <!-----------------------FIN-DIRECCION------------------>
+    <!------------------------------------------------------>
+
+    <!------------------------------------------------------>
+    <!-----------------------JUSTIFY------------------------>
+    <!------------------------------------------------------>
+
+    <div class="seccion">
+        <!----------------------------------------------------->
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Propiedades justify-content</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#center">center</a></li>
+                    <li><a href="#flex-star">flex-star</a></li>
+                    <li><a href="#flex-end">flex-end</a></li>
+                    <li><a href="#space-around">space-around</a></li>
+                    <li><a href="#space-between">space-between</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3>Center</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad lo que hace es alinear los elementos al centro del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: center;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño center-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--flex-star-->
+        <div id="flex-star">
+            <nav class="rrc-explicacion">
+                <h3>flex-star</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad alinea sus elementos al incio del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: flex-star;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño start-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--flex-end-->
+        <div id="flex-end">
+            <nav class="rrc-explicacion">
+                <h3>flex-end</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad alinea sus elementos al final del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: flex-end;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño end-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--space-around-->
+        <div id="space-around">
+            <nav class="rrc-explicacion">
+                <h3>space-around</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad da espacios iguales antes y entre sus elemnetos</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: space-around;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño around-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--space-between-->
+        <div id="space-between">
+            <nav class="rrc-explicacion">
+                <h3>space-between</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad da espacios iguales solo entre sus elemnetos</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: space-between;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño between-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!----------------------FIN-JUSTIFY--------------------->
+        <!----------------------------------------------------->
+
+
+    </div>
