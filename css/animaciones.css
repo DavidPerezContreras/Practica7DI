@@ -1,0 +1,172 @@
+.dec_animacionsencilla {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: mianimacion 5s 1;
+    animation-delay: -2s;
+    animation-iteration-count:infinite;
+}
+  
+@keyframes mianimacion {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+/*---------------Animaciones con porcentaje---------------*/
+
+.dec_animacionesporcentaje{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: mianimacionporcentaje 5s infinite;
+}
+
+@keyframes mianimacionporcentaje {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: red;}
+    50%  {top: 50px; left: 100px; background: red;}
+    75%  {top: 50px; left: 0px; background: red;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+/*-------------Animaciones cambiando de color------------------*/
+
+.dec_animacionescambiandocolor{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: relative;
+    animation: mianimacionescambiandocolor 5s infinite;
+}
+
+@keyframes mianimacionescambiandocolor {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 25px; left: 100px; background: yellow;}
+    75%  {top: 25px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+/*--------------Animation-Timing-Function--------------*/
+
+.dec_functionclase {
+    width: 100px;
+    height: -30px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; 
+    animation: mifuncionclase 5s infinite;
+}
+
+#dec_divfunction1 {-webkit-animation-timing-function: linear;background: red;}
+#dec_divfunction2 {-webkit-animation-timing-function: ease;background: blue;}
+#dec_divfunction3 {-webkit-animation-timing-function: ease-in;background: yellow;}
+#dec_divfunction4 {-webkit-animation-timing-function: ease-out;background: green;}
+#dec_divfunction5 {-webkit-animation-timing-function: ease-in-out;background: red;}
+
+#dec_divfunction1 {animation-timing-function: linear;}
+#dec_divfunction2 {animation-timing-function: ease;}
+#dec_divfunction3 {animation-timing-function: ease-in;}
+#dec_divfunction4 {animation-timing-function: ease-out;}
+#dec_divfunction5 {animation-timing-function: ease-in-out;}
+
+@-webkit-keyframes mifuncionclase {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+@keyframes mifuncionclase {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/*-------------Animation-Delay-------------*/
+
+@keyframes mianimaciondelay {
+    from { left: 0px; }
+    to { left: 200px; }
+}
+
+.dec_divdelay {
+    animation-name: mianimaciondelay;
+    animation-delay: 250ms;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 25px;
+    position: relative;
+    animation-iteration-count:infinite;
+}
+
+/*-----Animation Iteration Count ----*/
+
+.dec_iterationcount {
+    width:0; 
+    height:0; 
+    border-right: 50px solid transparent; 
+    border-top: 50px solid #5cb85c; 
+    border-left: 50px solid #5cb85c; 
+    border-bottom: 50px solid #5cb85c; 
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    border-radius: 100%;
+    position: relative;
+    animation: mianimacioncount 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacioncount {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+/*-----------------Animation-direction-------------------------*/
+
+.dec_animacionesdireccion{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; 
+    -webkit-animation-direction: alternate; 
+    animation: mianimacionesdireccion 5s infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes mianimacionesdireccion {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes mianimacionesdireccion {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 100px; top: 0px;}
+    50%  {background: blue; left: 100px; top: 25px;}
+    75%  {background: green; left: 0px; top: 25px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+/*-----------------animation-play-state-------------------------*/
+
+.dec_animationstate {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mianimacionstate 5s;
+    animation-play-state: initial;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes mianimacionstate {
+    from {left: 0px;}
+    to {left: 200px;}
+  }

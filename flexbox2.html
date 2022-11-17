@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/abdelhaq.css">
+
+</head>
+
+<body>
+
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Flex Items</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#order">order</a></li>
+                    <li><a href="#flex-grow">flex-grow</a></li>
+                    <li><a href="#flex-shrink">flex-shrink</a></li>
+                    <li><a href="#flex-basis">flex-basis</a></li>
+                    <li><a href="#align-self">align-self</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--center-->
+        <div id="order">
+            <nav class="rrc-explicacion">
+                <h3>order</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto"> La propiedad CSS order especifica el orden utilizado para disponer los elementos en su contenedor flexible.
+                    Los elementos estarán dispuestos en orden ascendente según el valor de order . 
+                </p>
+                <p class="rrc-codigo">
+                    .order-container{<br>
+                        display: flex;<br>
+                      align-items: stretch;<br>
+                    }<br>
+                    .caja1{order: 3;}<br>
+                    .caja2{order: 2;}<br>
+                    .caja3{order: 4;}<br>
+                    .caja4{order: 1;}<br>
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño container">
+                    <div class="order-caja1">1</div>
+                    <div class="order-caja2">2</div>
+                    <div class="order-caja3">3</div>
+                    <div class="order-caja4">4</div>
+                </div>
+            </nav>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="flex-grow">
+            <nav class="rrc-explicacion">
+                <h3>flex-grow</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto"> La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex), en su dirección principal. 
+                </p>
+                <p class="rrc-codigo">
+                    .flex-grow-caja1{flex-grow: 1;}<br>
+                    .flex-grow-caja2{flex-grow: 2;}<br>
+                    .flex-grow-caja3{flex-grow: 3;}<br>
+                    .flex-grow-caja4{flex-grow: 10;}<br>
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño container">
+                    <div class="flex-grow-caja1">1</div>
+                    <div class="flex-grow-caja2">2</div>
+                    <div class="flex-grow-caja3">3</div>
+                    <div class="flex-grow-caja4">4</div>
+                </div>
+            </nav>
+        </div>
+        
+        <br>
+        <br>
+
+        <div id="flex-shrink">
+            <nav class="rrc-explicacion">
+                <h3>flex-shrink</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">La propiedad CSS flex-shrink especifica el factor de contracción de un flex item</p>
+                <p class="rrc-codigo">
+                    .flex-shrink-caja2{flex-shrink : 0;}<br>
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño container">
+                    <div class="flex-shrink-caja1">1</div>
+                    <div class="flex-shrink-caja2">2</div>
+                    <div class="flex-shrink-caja3">3</div>
+                    <div class="flex-shrink-caja4">4</div>
+                    <div class="flex-shrink-caja5">5</div>
+                    <div class="flex-shrink-caja6">6</div>
+                    <div class="flex-shrink-caja7">7</div>
+                    <div class="flex-shrink-caja8">8</div>
+                </div>
+            </nav>
+        </div>
+        
+        <br>
+        <br>
+
+        <div id="flex-basis">
+            <nav class="rrc-explicacion">
+                <h3>flex-basis</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">La propiedad de CSS flex-basis especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible.</p>
+                <p class="rrc-codigo">
+                    .flex-basis-caja5{flex-basis : 300px;}<br>
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño container">
+                    <div class="flex-basis-caja1">1</div>
+                    <div class="flex-basis-caja2">2</div>
+                    <div class="flex-basis-caja3">3</div>
+                    <div class="flex-basis-caja4">4</div>
+                    <div class="flex-basis-caja5">5</div>
+                    <div class="flex-basis-caja6">6</div>
+                    <div class="flex-basis-caja7">7</div>
+                    <div class="flex-basis-caja8">8</div>
+                </div>
+            </nav>
+        </div>
+         
+        <br>
+        <br>
+
+        <div id="align-self">
+            <nav class="rrc-explicacion">
+                <h3>align-self</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">La propiedad align-self de Flexbox nos permite sobrescribir la alineación de un elemento dentro de un contenedor flex.</p>
+                <p class="rrc-codigo">
+                    .align-self-container{<br>
+                        display: flex;<br>
+                        height: 400px;<br>
+                        justify-content: center;<br>
+                    }<br>
+                    .align-self-caja6{align-self: center;}<br>
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño align-self-container">
+                    <div class="align-self-caja1">1</div>
+                    <div class="align-self-caja2">2</div>
+                    <div class="align-self-caja3">3</div>
+                    <div class="align-self-caja4">4</div>
+                    <div class="align-self-caja5">5</div>
+                    <div class="align-self-caja6">6</div>
+                    <div class="align-self-caja7">7</div>
+                    <div class="align-self-caja8">8</div>
+                </div>
+            </nav>
+            <br>
+            <nav class="rrc-explicacion">
+            <p class="rrc-texto">flex-start: esta opción alinea al elemento hacia el borde inicial del eje principal. flex-end: esta opción alinea al elemento hacia el borde final del eje principal.</p>
+                <p class="rrc-codigo">
+                    align-self-SyE-caja5{align-self: flex-start;}<br>
+                    .align-self-SyE-caja6{align-self: flex-end;}<br>
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño align-self-container">
+                    <div class="align-self-SyE-caja1">1</div>
+                    <div class="align-self-SyE-caja2">2</div>
+                    <div class="align-self-SyE-caja3">3</div>
+                    <div class="align-self-SyE-caja4">4</div>
+                    <div class="align-self-SyE-caja5">5</div>
+                    <div class="align-self-SyE-caja6">6</div>
+                    <div class="align-self-SyE-caja7">7</div>
+                    <div class="align-self-SyE-caja8">8</div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <!------------------------------------------------------>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" type="text/css" href="css/animaciones.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+<body>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Propiedades de las animaciones</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#animacionsecillas">Animaciones Sencillas</a></li>
+                    <li><a href="#animacionesporcentaje">Animaciones con porcentaje</a></li>
+                    <li><a href="#Animacioncolores">Animacion cambiando el color</a></li>
+                    <li><a href="#Animacionfunction">Animation-timing-function</a></li>
+                    <li><a href="#Animationdelay">Animation-delay</a></li>
+                    <li><a href="#animationiterationcount">Animation-iteration-count</a></li>
+                    <li><a href="#animationdirection">Animation-direction</a></li>
+                    <li><a href="#animationplaystate">Animation-play-state</a></li>
+                </ul>
+            </div>
+        </div>
+        <!----------------------------Animaciones explicacion-------------------------------------->
+        <nav class="rrc-explicacion">
+            <h2>Animaciones</h2>
+            <p class="rrc-texto">La animación CSS es un método para animar ciertos 
+                elementos HTML sin tener que usar el procesador y JavaScript o Flash que requieren memoria.
+                Las animaciones CSS se inician especificando fotogramas clave para la animación: 
+                estos fotogramas clave contienen los estilos que tendrá el elemento.</p><br>
+            <p>Para hacer animaciones utilizaremos el @keyframes, que son un conjunto de fotogramas 
+               clave que describen cómo se muestra cada elemento animado durante 
+               la secuencia de la animación.</p>
+        </nav>
+        <!---------------------------Animaciones sencillas------------------------------------>
+        <br>
+        <div id="animacionsecillas">
+            <nav class="rrc-explicacion">
+            <h2>Animaciones Sencillas</h2>
+                <p class="rrc-texto">Empezaremos con una animación que no se muy dificil, lo primero sera crear un archivo css 
+                donde estaran los estilos de la animacion , por ejemplo el nombre de la animacion que lo 
+                vamos a poner con animacion: mianimacion.En este codigo lo que hemos hecho ha sido crear un animacion con el nombre de mianimacion
+                , en el que se utiliza el from y el to , que sirve para declarar donde epieza una cosa 
+                y donde acaba esa misma cosa. </p>
+            <!--Parte donde sale el codigo-->
+                <div class="rrc-codigo">--Codigo CSS--<br>
+                .dec_animacionsencilla {<br>
+                    width: 50px;<br>
+                    height: 50px;<br>
+                    background: red;<br>
+                    position: relative;<br>
+                    animation: mianimacion 5s 1;<br>
+                    animation-delay: -2s;<br>
+                }
+                <br>
+                @keyframes mianimacion {<br>
+                    from {left: 0px;}<br>
+                    to {left: 200px;}<br>
+                }
+                <br>
+                <br>
+                --Codigo html--<br>
+                &lt;div class="dec_animacionsencilla">
+
+                &lt;/div&gt;
+                </div>
+                <!--Ahora lo que hacemos es mostrar la animacion  -->
+                <div class="rrc-enseño dec_animacionsencilla">
+
+                </div>
+            </nav>
+        </div>
+        <br>
+        <!--------------------------Animaciones con porcentaje----------------------------------->
+        <div id="animacionesporcentaje">
+        <nav class="rrc-explicacion">
+            <h2>Animaciones con porcentaje</h2>
+            <p class="rrc-texto">En estas animaciones lo que haremos sera ponerle un % a los lados.</p>
+            <!--Parte donde sale el codigo-->
+            <p class="rrc-codigo">--Codigo CSS--<br>
+                .dec_animacionesporcentaje{<br>
+                    width: 100px;<br>
+                    height: 100px;<br>
+                    background: red;<br>
+                    position: relative;<br>
+                    animation: mianimacionporcentaje 5s infinite;<br>
+                }<br>
+                <br>
+                @keyframes mianimacionporcentaje {<br>
+                    0%   {top: 0px; left: 0px; background: red;}<br>
+                    25%  {top: 0px; left: 100px; background: red;}<br>
+                    50%  {top: 50px; left: 100px; background: red;}<br>
+                    75%  {top: 50px; left: 0px; background: red;}<br>
+                    100% {top: 0px; left: 0px; background: red;}<br>
+                }
+            <br>
+            <br>
+            --Codigo html--
+            &lt;div class="dec_animacionesporcentaje">
+
+            &lt;/div&gt;
+            <div class="rrc-enseño dec_animacionesporcentaje">
+
+            </div>
+        </p>
+        </nav>
+        </div>
+        <br>
+        <!--------------------------Animaciones con cambio de color---------------------------->
+        <div id="Animacioncolores">
+        <nav class="rrc-explicacion">
+            <h2>Animaciones cambiando el color</h2>
+            <p class="rrc-texto">En estas animaciones lo que haremos sera lo mismo que la animacion anterior pero cada vez
+                que cambia de lugar ,el fondo del cuadrado cambia de color  
+            </p>
+            <p class="rrc-codigo">
+                --Codigo CSS--<br>
+                .dec_animacionesporcentaje{<br>
+                    width: 100px;<br>
+                    height: 100px;<br>
+                    background: red;<br>
+                    position: relative;<br>
+                    animation: mianimacionporcentaje 5s infinite;<br>
+                }
+                <br>
+                @keyframes mianimacionescambiandocolor {<br>
+                    0%   {top: 0px; left: 0px; background: red;}<br>
+                    25%  {top: 0px; left: 100px; background: blue;}<br>
+                    50%  {top: 25px; left: 100px; background: yellow;}<br>
+                    75%  {top: 25px; left: 0px; background: green;}<br>
+                    100% {top: 0px; left: 0px; background: red;}<br>
+                }<br>
+                <br>
+                <br>
+                --Codigo html--
+                &lt;div class="dec_animacionescambiandocolor">
+    
+                &lt;/div&gt;
+            </p>
+            <div class="rrc-enseño dec_animacionescambiandocolor">
+
+            </div>
+        </nav>
+        </div>
+        <br>
+        <!-----------------------------Animation-timing-function------------------------------>
+        <div id="Animacionfunction">
+        <nav class="rrc-explicacion">
+            <h2>Animation-timing-function</h2>
+            <p class="rrc-texto">Reproduce una animación con la misma velocidad de principio a fin.</p>
+            <p class="rrc-codigo">--Codigo CSS--<br>
+                #dec_divfunction1 {-webkit-animation-timing-function: linear;background: red;}<br>
+                #dec_divfunction2 {-webkit-animation-timing-function: ease;background: blue;}<br>
+                #dec_divfunction3 {-webkit-animation-timing-function: ease-in;background: yellow;}<br>
+                #dec_divfunction4 {-webkit-animation-timing-function: ease-out;background: green;}<br>
+                #dec_divfunction5 {-webkit-animation-timing-function: ease-in-out;background: red;}<br>
+                <br>
+                #dec_divfunction1 {animation-timing-function: linear;}<br>
+                #dec_divfunction2 {animation-timing-function: ease;}<br>
+                #dec_divfunction3 {animation-timing-function: ease-in;}<br>
+                #dec_divfunction4 {animation-timing-function: ease-out;}<br>
+                #dec_divfunction5 {animation-timing-function: ease-in-out;}<br>
+    
+                @-webkit-keyframes mifuncionclase {<br>
+                    from {left: 0px;}
+                    to {left: 300px;}
+                }
+                <br>
+                @keyframes mifuncionclase {
+                    from {left: 0px;}
+                    to {left: 300px;}
+                }
+                <br>
+                <br>
+                --Codigo html--
+                <br> &lt;div class="dec_functionclase"><br>
+                    &lt;div id="dec_divfunction1">linear&lt;/div><br>
+                    &lt;div id="dec_divfunction2">ease&lt;/div><br>
+                    &lt;div id="dec_divfunction3">ease-in&lt;/div><br>
+                    &lt;div id="dec_divfunction4">ease-out&lt;/div><br>
+                    &lt;div id="dec_divfunction5">ease-in-out&lt;/div><br>
+                &lt;/div&gt;
+            </p>
+            <div class="rrc-enseño dec_functionclase">
+                <div id="dec_divfunction1">linear</div>
+                <div id="dec_divfunction2">ease</div>
+                <div id="dec_divfunction3">ease-in</div>
+                <div id="dec_divfunction4">ease-out</div>
+                <div id="dec_divfunction5">ease-in-out</div>
+            </div>
+        </nav>
+        </div>
+        <br>
+        <!-------------------------------Animation-delay------------------------------------>
+        <div id="Animationdelay">
+        <nav class="rrc-explicacion">
+            <h2>Animation-delay</h2>
+            <p class="rrc-texto">Especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación.</p>
+            <p class="rrc-codigo">--Codigo CSS--<br>
+                .dec_divdelay {
+                    animation-name: mianimaciondelay;<br>
+                    animation-delay: 250ms;<br>
+                    animation-duration: 3s;<br>
+                    animation-fill-mode: forwards;<br>
+                    width: 50px;<br>
+                    height: 50px;<br>
+                    background-color: orange;<br>
+                    border-radius: 25px;<br>
+                    position: relative;<br>
+                }
+                <br>
+               <br>--Codigo html--
+               &lt;div class="dec_divdelay">&lt;/div&gt;&lt;/p>
+               <div class="rrc-enseño dec_divdelay"></div>
+        </nav>
+        </div>
+        <br>
+        <!----------------------------animation-iteration-count------------------------------->
+        <div id="animationiterationcount">
+        <nav class="rrc-explicacion">
+            <h2>animation-iteration-count</h2>
+            <p class="rrc-texto">Especifica cuántas veces se repetirá la animación. El valor es un número o infinito</p>
+            <p class="rrc-codigo">--Codigo CSS--<br>
+                .dec_iterationcount {<br>
+                    width:0; <br>
+                    height:0; <br>
+                    border-right: 50px solid transparent; <br>
+                    border-top: 50px solid #5cb85c; <br>
+                    border-left: 50px solid #5cb85c; <br>
+                    border-bottom: 50px solid #5cb85c; <br>
+                    -moz-border-radius: 100%; <br>
+                    -webkit-border-radius: 100%; <br>
+                    border-radius: 100%;<br>
+                    position: relative;<br>
+                    animation: mianimacioncount 3s;<br>
+                    animation-iteration-count: infinite;<br>
+                }
+            <br>
+            <br>
+                --Codigo html--<br>
+                &lt;div class="rrc-enseño dec_iterationcount"><br>
+                &lt;/div><br>
+            </p>
+            <div class="rrc-enseño dec_iterationcount">
+            </div>
+        </nav>
+        </div>
+        <br>
+        <!---------------------------------animation-direction----------------------------->
+        <div id="animationdirection">
+            <nav class="rrc-explicacion">
+                <h2>animation-direction</h2>
+                <p class="rrc-texto">La propiedad de animación dirección define si una animación debe jugar en dirección inversa o en ciclos alternos.</p>
+                <p class="rrc-codigo">--Codigo CSS--<br>
+                    .dec_animacionesdireccion{<br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        background: red;<br>
+                        position: relative;<br>
+                        -webkit-animation: mianimacionesdireccion 5s infinite; <br>
+                        -webkit-animation-direction: alternate; <br>
+                        animation: mianimacionesdireccion 5s infinite;<br>
+                        animation-direction: alternate;<br>
+                    }
+                    <br>
+                    <br>
+                    --Codigo html--
+                    &lt;div class="rrc-enseño dec_animacionesdireccion">
+
+                    &lt;/div>
+
+                </p>
+                <div class="rrc-enseño dec_animacionesdireccion">
+
+                </div>
+            </nav>
+        </div>
+        <br>
+        <!-------------------------------animation-play-state------------------------------------>
+        <div id="animationplaystate">
+            <nav class="rrc-explicacion">
+                <h2>animation-play-state</h2>
+                <p class="rrc-texto">propiedad que especifica si la animación se está ejecutando o está en pausa.</p>
+                <p class="rrc-codigo">--Codigo CSS--<br>
+                    .dec_animationstate {<br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        background: red;<br>
+                        position: relative;<br>
+                        animation: mianimacionstate 5s;<br>
+                        animation-play-state: initial;<br>
+                        animation-iteration-count: infinite;<br>
+                      }
+                      <br>
+                      <br>
+                      --Codigo html--<br>
+                      &lt:div class="dec_animationstate">&lt;/div><br>
+                </p>
+                <div class="dec_animationstate"></div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

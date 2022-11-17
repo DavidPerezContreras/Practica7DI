@@ -1,0 +1,119 @@
+body {
+    box-sizing: border-box;
+    background-color: #99ccff;
+    width: 100vw;
+    height: 80vh;
+}
+.rrc-enseño2 {
+    /*divs de muestreo (1-2-3)*/
+    background-color: #f1f1f1;
+    text-align: center;
+    /*tamaño de los contenedores hijos*/
+
+}
+
+.muestra{
+    font-size: 30px;
+    text-shadow: -2px 2px 2px #999 ;
+}
+.muestra2{
+    font-size: 30px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+div>.muestra3{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50px;
+  border: 1px solid #000000;
+}
+div>.muestra3:hover{
+    overflow: visible;
+}
+div>.muestra4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 50px;
+    border: 1px solid #000000;
+}
+div>.muestra4:hover{
+    overflow: visible;
+}
+
+div>.muestra5{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "hhhh";
+    width: 50px;
+    border: 1px solid #000000;
+}
+div>.muestra5:hover{
+    overflow: visible;
+}
+
+div>.muestra6{
+    white-space: nowrap;
+    overflow-wrap: normal;
+    width: 80px;
+    border: 1px solid #000000;
+}
+
+.muestra7{
+    overflow-wrap: break-word;
+    width: 80px;
+    border: 1px solid #000000;
+}
+.muestra9{
+    width: 30px;
+    word-break: break-all;
+    border: 1px solid #000000;
+}
+.muestra10{
+    width: 50px;
+    word-break: keep-all;
+    border: 1px solid #000000;
+}
+
+.muestra10-5{
+    width: 50px;
+    word-break: keep-all;
+    border: 1px solid #000000;
+}
+
+.muestra11{
+    width: 200px;
+    border: 1px solid #000000;
+    writing-mode: horizontal-tb;
+}
+.muestra12{
+    width: 100px;
+    border: 1px solid #000000;
+    writing-mode: vertical-rl;
+}
+.muestra13{
+    width: 100px;
+    border: 1px solid #000000;
+    writing-mode: vertical-lr;
+}
+
+.bg-1{
+    background-color: rgb(97, 67, 133);
+    padding: 30px;
+ }
+ 
+ .t-stroke {
+   color: transparent;
+   -moz-text-stroke-width: 2px;
+   -webkit-text-stroke-width: 2px;
+   -moz-text-stroke-color: #000000;
+   -webkit-text-stroke-color: #ffffff;
+ }
+ 
+ .t-shadow {
+   text-shadow: 7px 7px #8dffcd;
+ }
+ img{
+    width: 500px;
+ }
+ 

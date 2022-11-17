@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/colores.css">
+</head>
+<body>
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Colores Hexadecimales</h2>
+            </div>
+        </div>
+        <br>        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <!--<h3>Colores Hexadecimales</h3>Explicacion-->
+                <p class="rrc-texto"> Los dos primeros símbolos del código de color HTML representan la intensidad del color rojo. 00 es el menos intenso y FF es el más intenso. El tercer y el cuarto número representan la intensidad del verde y el quinto y el sexto representan la intensidad del azul. Así, con esta combinación de la intensidad del rojo, verde y azul podemos mezclar cualquier color.</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    <b>Ejemplos:</b> <br>
+                    <p style="background-color: #ff0000;">background-color:#ff0000;   Esto seria el color rojo</p>
+                    <p style="background-color: #00ff00;">background-color:#00ff00;   Esto seria el color verde</p>
+                    <p style="background-color: #0000ff;">background-color:#0000ff;   Esto seria el color azul</p>
+                    <p style="color: white; background-color: #000000;">background-color:#000000;   Esto seria el color negro</p>
+                </p>   
+                <div class="imagen2"><img src="imagenes colores/hexadecimales.png"></div>
+                </nav>
+            <br>
+            <div class="rrc-marco-indice">
+                <div>
+                    <h2>Nombre de colores predefinidos</h2>
+                </div>
+            </div>
+            <nav class="rrc-explicacion">
+               
+                <p class="rrc-texto">Los navegadores modernos soportan 140 colores con nombre. Úsandolos en el código HTML y CSS por nombre.</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    <b>Ejemplos:</b> <br>
+                    <p style="background-color: red;">background-color: red;   Esto seria el color rojo</p>
+                    <p style="background-color: green;">background-color:green;   Esto seria el color verde</p>
+                    <p style="background-color: blue;">background-color:blue;   Esto seria el color azul</p>
+                    <p style="color: white; background-color: black;">background-color:black;   Esto seria el color negro</p>
+                </p>
+            </nav>
+            <br>
+
+            <div class="rrc-marco-indice">
+                <div>
+                    <h2>Colores RGB</h2>
+                </div>
+            </div>
+            <nav class="rrc-explicacion">
+               
+                <p class="rrc-texto"> Los colores en HTML se especifican mediante el estándar RGB (Red Green and Blue). Este estándar indica que una combinación de los tres colores básicos: rojo, verde y azul puede dar lugar a cualquier otro color. Esto se podria utilizar con porcentajes o numeros del 0 al 255.</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    <b>Ejemplos:</b> <br>
+                    <p style="background-color: rgb(255, 0, 0);">background-color: red;   Esto seria el color rojo</p>
+                    <p style="color: white; background-color:  rgb(0%, 0%, 0%) ">background-color:green;   Esto seria el color negro</p>
+                    <p style="background-color:  rgb(0, 0, 255);">background-color:blue;   Esto seria el color azul</p>
+                    <p style="background-color:  rgb(0%, 100%, 0%);">background-color:black;   Esto seria el color negro</p>
+                </p>
+            </nav>
+            <br>
+
+            <div class="rrc-marco-indice">
+                <div>
+                    <h2>Colores RGBA</h2>
+                </div>
+            </div>
+            <nav class="rrc-explicacion">
+               
+                <p class="rrc-texto"> Es una extension de RGB pero añadiendo un cuarto parametro que es el alfa, que especifica la opacidad del objeto. La sintaxis es asi (rojo, verde, azul, opacidad), la opacidad tien un rango entre 0.0 y 1.0</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    <b>Ejemplos:</b> <br>
+                        <p style="background-color: RGBA(255, 0, 0, 0.3);">background-color: RGBA(255, 0, 0, 0.3);   Esto seria el color rojo con transparencia 0.3</p>
+                        <p style="color: white; background-color:  RGBA(0, 0, 0, 0.3);">background-color:  RGBA(0, 0, 0, 0.3);   Esto seria el color negro con transparencia 0.3</p>
+                        <p style="background-color:  RGBA(0, 0, 255, 0.3);">background-color:  RGBA(0, 0, 255, 0.3);   Esto seria el color azul con transparencia 0.3</p>
+                        <p style="background-color:  RGBA(0, 255, 0, 0.3);">background-color:  RGBA(0, 255, 0, 0.3);   Esto seria el color verde con transparencia 0.3</p>
+                </p>
+            </nav>
+            <br>
+
+            <div class="rrc-marco-indice">
+                <div>
+                    <h2>Colores HSL</h2>
+                </div>
+            </div>
+            <nav class="rrc-explicacion">
+               
+                <p class="rrc-texto"> Un color HLS se especifica asi (tono, saturación, brillo). El tono tienes que utilizar un número entre 0 y 360. En cambio tanto la saturación como el brilo se añade con porcentajes de 0% a 100%.</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    <b>Ejemplos: </b><br>
+                        <p style="background-color: HSL(0, 100%, 50%);">background-color: HSL(0, 100%, 50%);   Esto seria el color rojo</p>
+                        <p style="background-color:  HSL(0, 0, 0);">background-color:  HSL(0, 0, 0);   Esto seria sin color </p>
+                        <p style="background-color:  HSL(250, 100%, 50%);">background-color:  HSL(250, 100%, 50%);   Esto seria el color azul</p>
+                        <p style="background-color:  HSL(120, 100%, 50%);">background-color:  HSL(120, 100%, 50%);   Esto seria el color verde</p>
+                        <div class="imagen2"><img class="imagen" src="imagenes colores/hsl.png"></div>
+                </p>
+            </nav>
+            <br>
+
+            <div class="rrc-marco-indice">
+                <div>
+                    <h2>Colores HSLA</h2>
+                </div>
+            </div>
+            <nav class="rrc-explicacion">
+               
+                <p class="rrc-texto"> Un color HLS se especifica asi (tono, saturación, brillo). El tono tienes que utilizar un número entre 0 y 360. En cambio tanto la saturación como el brilo se añade con porcentajes de 0% a 100%.</p>
+                <p class="rrc-codigo"><!--codigo-->
+                    <b>Ejemplos:</b> <br>
+                    <p style="background-color: HSLA(0, 100%, 50%,0.3);">background-color: HSLA(0, 100%, 50%,0.3);   Esto seria el color rojo</p>
+                    <p style="background-color:  HSLA(0, 0, 0,0.3);">background-color: HSLA(0, 0, 0,0.3);   Esto seria SIN color </p>
+                    <p style="background-color:  HSLA(250, 100%, 50%,0.3);">background-color: HSLA(250, 100%, 50%,0.3);   Esto seria el color azul</p>
+                    <p style="background-color:  HSLA(120, 100%, 50%,0.3);">background-color:HSLA(120, 100%, 50%,0.3);   Esto seria el color verde</p>
+                </p>
+            </nav>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.imagen{
+    height: 250px;
+    width: 250px;   
+}
+.imagen2{
+    display: flex;
+    justify-content: center;
+}
+

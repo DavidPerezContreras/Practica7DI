@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/efectostexto.css">
+    <style>
+        .rrc-marco-indice {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .rrc-indice {
+            display: block;
+            list-style: none;
+            align-items: flex-end;
+            text-align: center;
+
+        }
+        .rrc-indice>li>a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+
+        .rrc-explicacion {
+            /*Recuador gris explicativo*/
+            border: 1px solid black;
+            padding: 30px;
+            background-color: #E7E9EB;
+            /*cambio color del recuadro gris*/
+            max-width: 700px;
+            /*cambio tamaño del recuadro gris*/
+            margin: 0 auto;
+        }
+
+        .rrc-explicacion>.rrc-codigo {
+            /*estilos para el codigo*/
+            background-color: white;
+            padding: 10px;
+
+        }
+
+        @media (max-width: 500px) {
+
+            /*cambio de tamaño de las muestras par dispositivos moviles*/
+            .rrc-enseño>div {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="seccion">
+
+        <!----------------------------------------------------->
+
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Estilos de Texto</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#Text-Shadow">TextShadow</a></li>
+                    <li><a href="#Text-overflow">Text-overflow</a></li>
+                    <li><a href="#Word-wrapping">Word-wrapping</a></li>
+                    <li><a href="#space-around">space-around</a></li>
+                    <li><a href="#Complementos">Complemento</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--Parte del Text Shadow-->
+        <div id="Text-Shadow">
+            <nav class="rrc-explicacion">
+                <h3>Text-Shadow</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">La propiedad agrega sombra al texto. Las propiedades van separadas por espacios.
+                    Esta propiedad acepta una lista de sombras separadas por comas que se aplicarán al texto.</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    text-shadow: -2px 2px 2px #999;
+                </p>
+                <p class="rrc-texto">
+                <ul>
+                    <li>El primer valor es el desplazamiento horizontal .
+                    </li>
+                    <li>El segundo valor es el desplazamiento vertical </li>
+                    <li>El tercer valor es el radio de desenfoque (opcional)</li>
+                    <li> El cuarto valor es el color (opcional, aunque omitirlo hará que la sombra sea del mismo color
+                        que el propio texto)</li>
+                </ul>
+                </p>
+                <h4>Ejemplo 1:</h4>
+                <div class="rrc-enseño2">
+                    <p class="muestra">Texto de muestra</p>
+                </div>
+                <h4>Ejemplo 2:</h4>
+                <div class="rrc-enseño2">
+                    <p class="muestra2">Texto de muestra</p>
+                </div>
+            </nav>
+            <br>
+            <!--muestra-->
+
+        </div>
+
+        <!--Parte del Text Overflow-->
+        <div id="Text-overflow">
+            <nav class="rrc-explicacion">
+                <h3>Text-overflow</h3>
+                <p class="rrc-texto">La propiedad text-overflow especifica cómo se debe señalar al usuario el contenido
+                    desbordado que no se muestraeste se puede recortar o se representa con puntos suspensivos o una
+                    cadena personalizada<br>Se complementa con las siguientes propiedades</p>
+                <ul>
+                    <li>White-space: nowrap</li>
+                    <li>overflow:hiden</li>
+                </ul>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    text-shadow: clip|ellipsis;
+                </p>
+                <h4>Ejemplo 1:</h4>
+                <div class="rrc-enseño2">
+                    <div>
+                        <p class="muestra3">Texto de muestraaaaaaaaaa</p>
+                    </div>
+                </div>
+                <h4>Ejemplo 2:</h4>
+                <div class="rrc-enseño2">
+                    <div>
+                        <p class="muestra4">Texto de muestra</p>
+                    </div>
+                </div>
+                <h4>Ejemplo 3:</h4>
+                <div class="rrc-enseño2">
+                    <div>
+                        <p class="muestra5">Texto de muestra</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <!--Parte del overflow-wrap-->
+        <div id="overflow-wrap">
+            <nav class="rrc-explicacion">
+                <h3>Overflow-Wrap</h3>
+                <p class="rrc-texto">
+                    Esta propiedad permite que las palabras largas se puedan dvidir y pasar a la siguiente linea.
+                </p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    overflow-wrap: normal|break-word;
+                </p>
+                <ul>
+                    <li>normal: opción por defecto y no hace saltos de lineas</li>
+                    <li>break-word: permite el salto de linea</li>
+                </ul>
+                <h4>Ejemplo1</h4>
+                <div class="rrc-enseño2">
+                    <div>
+                        <p class="muestra6">Texto de muestraaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <h4>Ejemplo2</h4>
+                <div class="rrc-enseño2">
+                    <div class="muestra7">
+                        <p>Texto de las nuevas casas </p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+
+         <!--Parte del word-break-->
+        <div id="word-break">
+            <nav class="rrc-explicacion">
+                <h3>Word-Break</h3>
+                <p class="rrc-texto">
+                    Esta propiedad permite que las palabras que lleguen al final de su linea 
+                </p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    word-break: normal|break-all|keep-all|break-word;
+                </p>
+                <ul>
+                    <li>Normal: valor por defecto no se desvordara</li>
+                    <li>break-all:la palabra puede dividirse en cualquier carácter </li>
+                    <li>keep-all: no aplica saltos de palabra a los textos CJK</li>
+                    <li>break-work: hace el salto de line cuando termine la frase</li>
+                </ul>
+                <h4>Ejemplo1</h4>
+                <div class="rrc-enseño2">
+                    <div>
+                        <p class="muestra8">Texto de muestraaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <h4>Ejemplo2</h4>
+                <div class="rrc-enseño2">
+                    <div class="muestra9">
+                        <p>Texto de las nuevas casas </p>
+                    </div>
+                </div>
+                <h4>Ejemplo3</h4>
+                <div class="rrc-enseño2">
+                    <div class="muestra10">
+                        <p>Texto de las nuevas casasこんにちは、私の名前はペペです</p>
+                    </div>
+                </div>
+                <h4>Ejemplo3</h4>
+                <div class="rrc-enseño2">
+                    <div class="muestra10-5">
+                        <p>Texto de las nuevas casasこんにちは、私の名前はペペです</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+        
+
+        <div id="Writing-mode">
+            <nav class="rrc-explicacion">
+                <h3>Writing-mode</h3>
+                <p class="rrc-texto">establece si las líneas de texto se disponen horizontal o verticalmente, así como la dirección en la que avanzan los bloques.</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    writing-mode: horizontal-tb|vertical-rl|vertical-lr;
+                </p>
+                <ul>
+                    <li>horizontal-tb: el contenido fluye horizontalmente de izquierda a derecha, verticalmente de arriba a abajo</li>
+                    <li>vertical-rl: el contenido fluye verticalmente de arriba a abajo, horizontalmente de derecha a izquierda</li>
+                    <li>vertical-lr: el contenido fluya verticalmente de arriba a abajo, horizontalmente de izquierda a derecha</li>
+                </ul>
+
+                <h4>Ejemplo 1:</h4>
+                <div class="rrc-enseño2">
+                    <div class="muestra11">
+                        <p>Texto de muestraaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <h4>Ejemplo 2:</h4>
+                <div class="rrc-enseño2">
+                    <div>
+                        <p class="muestra12">Texto de muestra</p>
+                    </div>
+                </div>
+                <h4>Ejemplo 3:</h4>
+                <div class="rrc-enseño2">
+                    <div class="muestra13">
+                        <p>Texto de muestraaaaaaaaaaaa</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <div id="Complementos">
+            <nav class="rrc-explicacion">
+                <p>Buscas Implementar efectos mas avanzados?, pues en este apartado te daremos unas ideas que puedes
+                    implementar a tu proyecto</p>
+
+                <h3>Texto solo con bordes y sombras:</h3>
+                <div class="bg-1">
+                    <h1 class="t-stroke t-shadow">TITLE<h1>
+                </div>
+                <ul>
+                    <li><h4>Texto de sombra animado</h4>
+                    <a href="https://codepen.io/wyattnolen/pen/zzrbjb"><img src="https://www.creativosonline.org/wp-content/uploads/2018/04/texto-animado-sombra.jpg.webp"></a>
+                    </li>
+                    <li><h4>Efecto burbuja</h4>
+                    <a href="https://codepen.io/html5andblog/pen/ZWmYMy"><img src="https://www.creativosonline.org/wp-content/uploads/2018/04/texto-burbuja.jpg.webp"></a>
+                    </li>
+                    <li><h4>Animación de texto en CSS y HTML</h4>
+                        <a href="https://codepen.io/RobinTreur/pen/QKjgPX"><img src="https://www.creativosonline.org/wp-content/uploads/2018/04/puro-texto-css-animacion.jpg.webp"></a>
+                    </li>
+                    <li><h4>Montserrat</h4>
+                        <a href="https://codepen.io/ClaireLarsen/pen/XmVyVX"><img src="https://www.creativosonline.org/wp-content/uploads/2018/04/montserrat.jpg"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
