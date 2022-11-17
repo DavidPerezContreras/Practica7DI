@@ -29,8 +29,16 @@
         <button class="botonNavegacion" id="botonDegradados">Degradados</button>
         <button class="botonNavegacion" id="botonFlexBox1">FlexBox 1</button>
         <button class="botonNavegacion" id="botonFlexBox2">FlexBox 2</button>
-        <button class="botonNavegacion" id="botonPlantilla">Plantilla</button>
+        <!--<button class="botonNavegacion" id="botonPlantilla">Plantilla</button>-->
     </div>
+
+
+<!--TITLE
+-->
+<div id="title">
+    <h1 id="titleText"></h1>
+</div>
+
 
 
 <!--CONTENIDO-->
@@ -40,56 +48,68 @@
     <script>
         function mostrarBordesHtml(){
             document.getElementById("contenido").src="border.html";
+            document.getElementById("titleText").innerHTML="Bordes";
         }
 
 
         function mostrarFondosHtml(){
             document.getElementById("contenido").src="fondos.html";
+            document.getElementById("titleText").innerHTML="Fondos";
         }
 
         function mostrarEfectosTextoHtml(){
             document.getElementById("contenido").src="efectostexto.html";
+            document.getElementById("titleText").innerHTML="Efectos de Texto";
         }
 
         function mostrarFuentesHtml(){
             document.getElementById("contenido").src="fuentes.html";
+            document.getElementById("titleText").innerHTML="Fuentes";
         }
 
         function mostrarTransformHtml(){
             document.getElementById("contenido").src="transform.html";
+            document.getElementById("titleText").innerHTML="Transform.";
         }
 
         function mostrarTransicionesHtml(){
             document.getElementById("contenido").src="transiciones.html";
+            document.getElementById("titleText").innerHTML="Transiciones";
         }
 
         function mostrarAnimacionesHtml(){
             document.getElementById("contenido").src="animaciones.html";
+            document.getElementById("titleText").innerHTML="Animaciones";
         }
 
         function mostrarColumnasyListas(){
             document.getElementById("contenido").src="columnasylistas.html";
+            document.getElementById("titleText").innerHTML="Columnas y Listas";
         }
 
         function mostrarColoresHtml(){
             document.getElementById("contenido").src="colores.html";
+            document.getElementById("titleText").innerHTML="Color";
         }
 
         function mostrarDegradadosHtml(){
             document.getElementById("contenido").src="degradados.html";
+            document.getElementById("titleText").innerHTML="Degradados";
         }
 
         function mostrarFlexBox1Html(){
             document.getElementById("contenido").src="flexbox1.html";
+            document.getElementById("titleText").innerHTML="FlexBox 1";
         }
 
         function mostrarFlexBox2Html(){
             document.getElementById("contenido").src="flexbox2.html";
+            document.getElementById("titleText").innerHTML="FlexBox 2";
         }
 
-        function mostrarPlantilla(){
-            document.getElementById("contenido").src="plantilla.html";
-        }
+        //function mostrarPlantilla(){
+        //    document.getElementById("contenido").src="plantilla.html";
+       // }
 
         document.getElementById("botonBordes").onclick=mostrarBordesHtml;
         document.getElementById("botonFondos").onclick=mostrarFondosHtml;
@@ -105,7 +125,12 @@
         document.getElementById("botonFlexBox1").onclick=mostrarFlexBox1Html;
         document.getElementById("botonFlexBox2").onclick=mostrarFlexBox2Html;
 
-        document.getElementById("botonPlantilla").onclick=mostrarPlantilla;
+        //document.getElementById("botonPlantilla").onclick=mostrarPlantilla;
+
+
+
+
+        mostrarBordesHtml();
     </script>
 </body>
 </html>

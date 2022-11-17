@@ -5,26 +5,49 @@
 
 #tituloPractica{
     text-align: center;
+    margin-top:15px;
 }
 
 #navegacion{
     text-align: center;
+    padding-bottom:15px;
 }
 
 #contenido{
     display: flex;
     box-sizing: border-box;
     width:100vw;
-    height:80vh;
+    height:70vh;
 }
 
 iframe{
     border:10px solid black;
     border-right: 0px;
+    border-left: 0px;
     background-color: #99CCFF;
 }
 
 
+#title{
+    display: flexbox;
+    box-sizing: border-box;
+    width:100vw;
+    height:10vh;
+    min-height: 62px;
+
+    border-top:20px solid black;
+    background-color: aliceblue;
+}
+
+#titleText{
+    text-align: center;
+    margin-top:10px;
+    font-size: 30px;
+}
+
+#footer{
+
+}
 
 
 
